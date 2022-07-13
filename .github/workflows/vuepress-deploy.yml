@@ -1,5 +1,9 @@
 name: Build and Deploy
-on: [push]
+on:
+  push:
+    branches:
+      - main
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -12,6 +16,6 @@ jobs:
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         TARGET_REPO: yartu/yartu-ui-kit.github.io
-        TARGET_BRANCH: main
+        TARGET_BRANCH: gh_pages
         BUILD_SCRIPT: npm install && npm run docs:build
         BUILD_DIR: docs/.vuepress/dist/
