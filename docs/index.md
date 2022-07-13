@@ -9,5 +9,5 @@ actions:
   - text: Introduction
     link: /guide/accordion.html
     type: secondary
-footer: MIT Licensed | Copyright © 2017
+footer: MIT Licensed | Copyright © 2022
 ---
