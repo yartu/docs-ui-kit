@@ -2,6 +2,8 @@
   "name": "yartu-ui-kit-documentation",
   "version": "1.0.0",
   "description": "Yartu Ui Kit Documentation",
+  "title": "Yartu Ui Kit Documentation",
+  "base": "docs-ui-kit",
   "main": "index.js",
   "scripts": {
     "docs:dev": "vuepress dev docs",
