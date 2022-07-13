@@ -1,5 +1,5 @@
 import { defineClientConfig } from '@vuepress/client'
-import YartuUiKit from 'yartu-ui-kit';
+import YartuUiKit from '@yartu/ui-kit';
 
 export default defineClientConfig({
   enhance({ app }) {
