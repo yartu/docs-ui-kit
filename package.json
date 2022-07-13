@@ -14,7 +14,7 @@
     "@vuepress/theme-default": "^2.0.0-beta.48",
     "@vueuse/core": "^8.7.5",
     "tailwind-scrollbar-hide": "^1.1.7",
-    "yartu-ui-kit": "^1.0.0-beta.2"
+    "@yartu/ui-kit": "^1.0.0-beta.2"
   },
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^2.0.0-beta.48",
