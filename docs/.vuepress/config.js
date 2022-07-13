@@ -31,8 +31,8 @@ module.exports = {
     ],
   ],
   theme: defaultTheme({
-    logo: "/docs-ui-kit/images/logos/yartu-logo-horizontal.svg",
-    logoDark: "/docs-ui-kit/images/logos/yartu-logo-horizontal-dark.svg",
+    logo: "/images/logos/yartu-logo-horizontal.svg",
+    logoDark: "/images/logos/yartu-logo-horizontal-dark.svg",
     navbar: [
       // NavbarItem
       {
