@@ -9,16 +9,16 @@ module.exports = {
   description: "Powered by Tailwind & Vue 3",
   base: 'docs-ui-kit',
   head: [
-    ["link", { rel: "icon", sizes: "32x32", href: "/images/logos/logo.png" }],
-    ["link", { rel: "stylesheet", type: "text/css", href: "/input.css" }],
-    ["link", { rel: "stylesheet", type: "text/css", href: "/reset.css" }],
+    ["link", { rel: "icon", sizes: "32x32", href: "/docs-ui-kit/images/logos/logo.png" }],
+    ["link", { rel: "stylesheet", type: "text/css", href: "/docs-ui-kit/input.css" }],
+    ["link", { rel: "stylesheet", type: "text/css", href: "/docs-ui-kit/reset.css" }],
     ["script", { src: "https://cdn.tailwindcss.com" }],
     [
       "link",
       {
         rel: "stylesheet",
         type: "text/css",
-        href: "/icons/colored-icons/yartu-colored-icons.css",
+        href: "/docs-ui-kit/icons/colored-icons/yartu-colored-icons.css",
       },
     ],
     [
@@ -26,13 +26,13 @@ module.exports = {
       {
         rel: "stylesheet",
         type: "text/css",
-        href: "/icons/font-icons/yartu-icons.css",
+        href: "/docs-ui-kit/icons/font-icons/yartu-icons.css",
       },
     ],
   ],
   theme: defaultTheme({
-    logo: "/images/logos/yartu-logo-horizontal.svg",
-    logoDark: "/images/logos/yartu-logo-horizontal-dark.svg",
+    logo: "/docs-ui-kit/images/logos/yartu-logo-horizontal.svg",
+    logoDark: "/docs-ui-kit/images/logos/yartu-logo-horizontal-dark.svg",
     navbar: [
       // NavbarItem
       {

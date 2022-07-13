@@ -22,7 +22,7 @@
             : '4xl'
         "
         :label="label"
-        image="/images/avatar.jpeg"
+        image="/docs-ui-kit/images/avatar.jpeg"
         :shape="shape"
         :border="border"
       ></y-avatar>

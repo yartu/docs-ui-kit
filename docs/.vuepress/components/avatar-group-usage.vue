@@ -5,11 +5,11 @@
     <y-avatar-group size="md" :max="4" >
       <y-avatar 
           size="md"
-          image="/images/avatar.jpeg"
+          image="/docs-ui-kit/images/avatar.jpeg"
         ></y-avatar>
         <y-avatar 
           size="md"
-          image="/images/john.jpeg"
+          image="/docs-ui-kit/images/john.jpeg"
         ></y-avatar>
         <y-avatar 
           size="md"
