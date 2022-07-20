@@ -4,10 +4,10 @@ title: Home
 heroImage: /images/logos/logo.png
 actions:
   - text: Get Started
-    link: /guide/accordion.html
+    link: /documentation/getstarted/installation.html
     type: primary
   - text: Introduction
-    link: /guide/accordion.html
+    link: /documentation/getstarted/installation.html
     type: secondary
 footer: MIT Licensed | Copyright © 2022
 ---
