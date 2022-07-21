@@ -1,0 +1,1 @@
+import{_ as a,o as c,c as r,a as e,w as _,r as n}from"./app.b446640f.js";const l={};function s(d,m){const t=n("note-card-usage"),o=n("ClientOnly");return c(),r("div",null,[e(o,null,{default:_(()=>[e(t)]),_:1})])}var f=a(l,[["render",s],["__file","note-card.html.vue"]]);export{f as default};

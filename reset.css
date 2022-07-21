@@ -1,0 +1,17 @@
+.navbar .logo{
+  display: inline !important;
+}
+
+.slider{
+ width: 100% !important;
+}
+
+#installation{
+  font-size:2.2rem !important;
+  font-weight:600 !important;
+}
+#usage{
+  font-size: 1.65rem;
+  padding-bottom: 0.3rem;
+  font-weight:600;
+}

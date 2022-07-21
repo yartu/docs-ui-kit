@@ -1,0 +1,1 @@
+import{_ as t,o as _,c as a,a as e,w as l,r as c}from"./app.b446640f.js";const s={};function r(m,u){const o=c("checkbox-usage"),n=c("ClientOnly");return _(),a("div",null,[e(n,null,{default:l(()=>[e(o)]),_:1})])}var h=t(s,[["render",r],["__file","checkbox.html.vue"]]);export{h as default};

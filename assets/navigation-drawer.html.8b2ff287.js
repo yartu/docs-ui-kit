@@ -1,0 +1,1 @@
+import{_ as o,o as r,c as _,a as e,w as c,r as n}from"./app.b446640f.js";const l={};function i(s,d){const a=n("navigation-drawer-usage"),t=n("ClientOnly");return r(),_("div",null,[e(t,null,{default:c(()=>[e(a)]),_:1})])}var u=o(l,[["render",i],["__file","navigation-drawer.html.vue"]]);export{u as default};

@@ -1,0 +1,1 @@
+import{_ as c,o as _,c as a,a as e,w as l,r as n}from"./app.b446640f.js";const s={};function r(i,m){const o=n("icon-usage"),t=n("ClientOnly");return _(),a("div",null,[e(t,null,{default:l(()=>[e(o)]),_:1})])}var f=c(s,[["render",r],["__file","icon.html.vue"]]);export{f as default};

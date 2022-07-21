@@ -1,0 +1,1 @@
+import{_ as c,o,c as s,a as e,w as r,r as n}from"./app.b446640f.js";const _={};function l(m,u){const a=n("snackbar-usage"),t=n("ClientOnly");return o(),s("div",null,[e(t,null,{default:r(()=>[e(a)]),_:1})])}var i=c(_,[["render",l],["__file","snackbar.html.vue"]]);export{i as default};

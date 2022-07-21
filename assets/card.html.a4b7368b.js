@@ -1,0 +1,1 @@
+import{_ as c,o,c as r,a as e,w as _,r as n}from"./app.b446640f.js";const l={};function s(d,m){const t=n("card-usage"),a=n("ClientOnly");return o(),r("div",null,[e(a,null,{default:_(()=>[e(t)]),_:1})])}var f=c(l,[["render",s],["__file","card.html.vue"]]);export{f as default};

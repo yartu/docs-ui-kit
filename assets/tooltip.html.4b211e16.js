@@ -1,0 +1,1 @@
+import{_ as l,o as _,c as a,a as t,w as c,r as e}from"./app.b446640f.js";const s={};function r(i,p){const o=e("tooltip-usage"),n=e("ClientOnly");return _(),a("div",null,[t(n,null,{default:c(()=>[t(o)]),_:1})])}var u=l(s,[["render",r],["__file","tooltip.html.vue"]]);export{u as default};

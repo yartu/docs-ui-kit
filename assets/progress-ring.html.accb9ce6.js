@@ -1,0 +1,1 @@
+import{_ as s,o as t,c as _,a as e,w as a,r as n}from"./app.b446640f.js";const c={};function l(i,p){const r=n("progress-ring-usage"),o=n("ClientOnly");return t(),_("div",null,[e(o,null,{default:a(()=>[e(r)]),_:1})])}var m=s(c,[["render",l],["__file","progress-ring.html.vue"]]);export{m as default};

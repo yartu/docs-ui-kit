@@ -1,0 +1,5 @@
+import{_ as u,I as f,o as c,c as v,a as s,w as t,F as h,b as y,r as a,q as g,m as b,e as n,d as x,t as l}from"./app.b446640f.js";const C=n("Modal"),N=n("Open Modal"),k=x("div",{class:"p-6 w-full"}," Some content here ",-1),w=n(' <y-modal v-if="openModal">'+l(`
+  `)+'<div class="p-6 w-full">'+l(`
+   `)+" Some content here"+l(`
+  `)+"</div>"+l(`
+`)+" </y-modal> "),M=y('<div class="flex flex-col mt-7 gap-1"><p class="font-semibold text-xl">Component Props</p><table><thead><tr><th>Prop Name</th><th>Type</th><th>Default</th></tr></thead><tbody><tr><td>width</td><td>String</td><td>&#39;404px&#39;</td></tr></tbody></table></div>',1),S={__name:"modal-usage",setup(V){const e=f(!1);function d(){e.value==!1?e.value=!0:e.value=!1}return(B,o)=>{const r=a("y-button"),_=a("y-modal"),p=a("usage"),i=a("copy-to-clip-board");return c(),v(h,null,[s(p,null,{title:t(()=>[C]),component:t(()=>[s(r,{primary:"",onClick:o[0]||(o[0]=m=>d()),size:"lg"},{default:t(()=>[N]),_:1}),e.value?(c(),g(_,{key:0,onClose:o[1]||(o[1]=m=>d())},{default:t(()=>[k]),_:1})):b("",!0)]),_:1}),s(i,null,{default:t(()=>[w]),_:1}),M],64)}}};var F=u(S,[["__file","modal-usage.vue"]]);export{F as default};

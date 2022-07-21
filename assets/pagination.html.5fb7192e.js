@@ -1,0 +1,1 @@
+import{_ as o,o as _,c,a as n,w as l,r as e}from"./app.b446640f.js";const i={};function s(r,p){const t=e("pagination-usage"),a=e("ClientOnly");return _(),c("div",null,[n(a,null,{default:l(()=>[n(t)]),_:1})])}var u=o(i,[["render",s],["__file","pagination.html.vue"]]);export{u as default};

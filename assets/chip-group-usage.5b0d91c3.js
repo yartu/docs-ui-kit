@@ -1,0 +1,2 @@
+import{_ as p,I as c,o as n,c as _,a as o,w as e,F as r,r as a,e as t,t as i}from"./app.b446640f.js";const u=t("Chip Group"),m=t(' <y-collapsible-panel title="Collapsible Panel"'+i(`
+`)+"\xA0></y-collapsible-panel> "),g={__name:"chip-group-usage",setup(d){return c(!1),(f,h)=>{const s=a("usage"),l=a("copy-to-clip-board");return n(),_(r,null,[o(s,null,{title:e(()=>[u]),component:e(()=>[]),_:1}),o(l,null,{default:e(()=>[m]),_:1})],64)}}};var x=p(g,[["__file","chip-group-usage.vue"]]);export{x as default};

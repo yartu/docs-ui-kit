@@ -1,0 +1,1 @@
+import{_ as r,o as _,c as a,a as e,w as c,r as o}from"./app.b446640f.js";const l={};function s(d,p){const n=o("dropdown-usage"),t=o("ClientOnly");return _(),a("div",null,[e(t,null,{default:c(()=>[e(n)]),_:1})])}var u=r(l,[["render",s],["__file","dropdown.html.vue"]]);export{u as default};

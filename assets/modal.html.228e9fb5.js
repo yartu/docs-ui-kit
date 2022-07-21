@@ -1,0 +1,1 @@
+import{_ as a,o as l,c as _,a as e,w as c,r as o}from"./app.b446640f.js";const s={};function r(m,d){const n=o("modal-usage"),t=o("ClientOnly");return l(),_("div",null,[e(t,null,{default:c(()=>[e(n)]),_:1})])}var f=a(s,[["render",r],["__file","modal.html.vue"]]);export{f as default};

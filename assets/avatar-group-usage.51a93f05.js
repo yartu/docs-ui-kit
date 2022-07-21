@@ -1,0 +1,6 @@
+import{_ as c,o as l,c as m,a as t,w as o,F as _,b as p,r,e as s,t as a}from"./app.b446640f.js";const g={},v=s("Avatar Group"),u=s(' <y-avatar-group size="md">'+a(`
+`)+' <y-avatar size="md" image="/images/avatar.jpeg"></y-avatar>'+a(`
+`)+' <y-avatar size="md" image="/images/john.jpeg"></y-avatar>'+a(`
+`)+' <y-avatar size="md" label="CJ"></y-avatar>'+a(`
+`)+' <y-avatar size="md" label="+1"></y-avatar>'+a(`
+`)+" </y-avatar-group> "),y=p('<div class="flex flex-col mt-7 gap-1"><p class="font-semibold text-xl">Component Props</p><table><thead><tr><th>Prop Name</th><th>Type</th><th>Default</th></tr></thead><tbody><tr><td>size</td><td>String</td><td>&#39;md&#39;</td></tr><tr><td>max</td><td>number</td><td>4</td></tr><tr><td>color</td><td>String</td><td>&#39;red&#39;</td></tr></tbody></table></div>',1);function h(b,f){const e=r("y-avatar"),d=r("y-avatar-group"),n=r("usage"),i=r("copy-to-clip-board");return l(),m(_,null,[t(n,null,{title:o(()=>[v]),component:o(()=>[t(d,{size:"md",max:4},{default:o(()=>[t(e,{size:"md",image:"/docs-ui-kit/images/avatar.jpeg"}),t(e,{size:"md",image:"/docs-ui-kit/images/john.jpeg"}),t(e,{size:"md",label:"CJ"}),t(e,{size:"md",label:"AS"})]),_:1})]),_:1}),t(i,null,{default:o(()=>[u]),_:1}),y],64)}var z=c(g,[["render",h],["__file","avatar-group-usage.vue"]]);export{z as default};

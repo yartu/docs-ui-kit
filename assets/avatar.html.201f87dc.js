@@ -1,0 +1,1 @@
+import{_ as o,o as r,c as _,a,w as c,r as e}from"./app.b446640f.js";const l={};function s(m,u){const t=e("avatar-usage"),n=e("ClientOnly");return r(),_("div",null,[a(n,null,{default:c(()=>[a(t)]),_:1})])}var i=o(l,[["render",s],["__file","avatar.html.vue"]]);export{i as default};

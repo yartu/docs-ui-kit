@@ -1,0 +1,3 @@
+import{_ as d,I as n,R as i,a3 as _,o as u,c as y,d as a,a as v,v as f,e as t,r as m}from"./app.b446640f.js";const C={class:"border rounded-lg"},T={class:"!p-4 !m-0 relative"},b=t("        "),x=t(`
+        `),B=t(`
+      `),h={__name:"copyToClipBoard",setup(k){const e=n(null),o=n(null);i(()=>{o.value=e.value.innerText});const{text:N,copy:r,copied:V,isSupported:g}=_({source:o});function c(){o.value=e.value.innerText,r()}return(l,s)=>{const p=m("y-button");return u(),y("div",C,[a("pre",T,[b,v(p,{class:"absolute top-4 right-4",square:"",secondary:"",icon:"yi yi-copy",onClick:s[0]||(s[0]=S=>c())}),x,a("p",{ref_key:"code_section",ref:e},[f(l.$slots,"default")],512),B])])}}};var q=d(h,[["__file","copyToClipBoard.vue"]]);export{q as default};

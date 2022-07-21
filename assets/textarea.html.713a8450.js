@@ -1,0 +1,1 @@
+import{_ as o,o as r,c as _,a as e,w as c,r as t}from"./app.b446640f.js";const l={};function s(m,u){const a=t("textarea-usage"),n=t("ClientOnly");return r(),_("div",null,[e(n,null,{default:c(()=>[e(a)]),_:1})])}var i=o(l,[["render",s],["__file","textarea.html.vue"]]);export{i as default};

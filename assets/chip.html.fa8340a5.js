@@ -1,0 +1,1 @@
+import{_ as o,o as a,c,a as e,w as _,r as l}from"./app.b446640f.js";const s={};function r(p,i){const n=l("collapsible-panel-usage"),t=l("ClientOnly");return a(),c("div",null,[e(t,null,{default:_(()=>[e(n)]),_:1})])}var u=o(s,[["render",r],["__file","chip.html.vue"]]);export{u as default};

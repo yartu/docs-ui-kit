@@ -1,0 +1,1 @@
+import{_ as a,o as s,c as _,a as t,w as c,r as e}from"./app.b446640f.js";const l={};function r(m,u){const o=e("toast-usage"),n=e("ClientOnly");return s(),_("div",null,[t(n,null,{default:c(()=>[t(o)]),_:1})])}var i=a(l,[["render",r],["__file","toast.html.vue"]]);export{i as default};

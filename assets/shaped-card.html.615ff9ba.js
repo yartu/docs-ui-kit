@@ -1,0 +1,1 @@
+import{_ as c,o,c as s,a as e,w as r,r as a}from"./app.b446640f.js";const _={};function l(d,p){const n=a("shaped-card-usage"),t=a("ClientOnly");return o(),s("div",null,[e(t,null,{default:r(()=>[e(n)]),_:1})])}var u=c(_,[["render",l],["__file","shaped-card.html.vue"]]);export{u as default};

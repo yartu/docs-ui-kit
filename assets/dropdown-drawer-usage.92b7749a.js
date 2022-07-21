@@ -1,0 +1,10 @@
+import{_ as f,I as y,o as w,c as g,a as o,w as e,F as u,b as h,r as d,d as n,e as a,t}from"./app.b446640f.js";const m=a("Dropdown Drawer"),x={class:"w-3/4"},v=a(" Folder "),b=a("Folder"),F={class:"flex flex-col gap-1"},B=h('<div class="flex flex-col mt-7 gap-1"><p class="font-semibold text-xl">Component Props</p><table><thead><tr><th>Prop Name</th><th>Type</th><th>Default</th></tr></thead><tbody><tr><td>title</td><td>String</td><td>&#39;Title&#39;</td></tr><tr><td>active</td><td>Boolean</td><td>false</td></tr><tr><td>prefix</td><td>String</td><td>&#39;&#39;</td></tr><tr><td>toggleIcon</td><td>String</td><td>&#39;&#39;</td></tr><tr><td>collapse</td><td>Boolean</td><td>false</td></tr></tbody></table></div>',1),D={__name:"dropdown-drawer-usage",setup(N){const r=y(!1);function s(){r.value==!1?r.value=!0:r.value=!1}return(S,V)=>{const l=d("y-dropdown-drawer-item"),i=d("y-dropdown-drawer"),c=d("y-checkbox"),p=d("usage"),_=d("copy-to-clip-board");return w(),g(u,null,[o(p,null,{title:e(()=>[m]),component:e(()=>[n("div",x,[o(i,{active:r.value,toggleIcon:"yi yi-arrow-right",prefix:"yi yi-folder",title:"Folders"},{default:e(()=>[o(l,{prefix:"yi yi-folder ",class:"gap-1"},{default:e(()=>[v]),_:1}),o(l,{prefix:"yi yi-folder",class:"gap-1"},{default:e(()=>[b]),_:1})]),_:1},8,["active"])])]),rightProps:e(()=>[n("div",F,[o(c,{onChange:s,inputValue:"active",label:"Active",class:"gap-2"})])]),_:1}),o(_,null,{default:e(()=>[a(" <y-dropdown-drawer "+t(r.value?"active ":"")+'title="Folders"'+t(`
+`)+' toggleIcon="yi yi-arrow-right" prefix="yi yi-folder">'+t(`
+   `)+' <y-dropdown-drawer-item class="gap-1" prefix="yi yi-folder">'+t(`
+      `)+"Folder"+t(`
+    `)+"</y-dropdown-drawer-item>"+t(`
+   `)+' <y-dropdown-drawer-item class="gap-1" prefix="yi yi-folder" '+t(`
+      `)+' postfix="yi yi-arrow-right">'+t(`
+      `)+"Folder"+t(`
+    `)+"</y-dropdown-drawer-item>"+t(`
+`)+" </y-dropdown-drawer> ",1)]),_:1}),B],64)}}};var C=f(D,[["__file","dropdown-drawer-usage.vue"]]);export{C as default};

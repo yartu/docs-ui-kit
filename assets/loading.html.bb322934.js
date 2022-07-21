@@ -1,0 +1,1 @@
+import{_ as a,o as l,c as _,a as e,w as c,r as n}from"./app.b446640f.js";const s={};function r(i,d){const o=n("loading-usage"),t=n("ClientOnly");return l(),_("div",null,[e(t,null,{default:c(()=>[e(o)]),_:1})])}var u=a(s,[["render",r],["__file","loading.html.vue"]]);export{u as default};

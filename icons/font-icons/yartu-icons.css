@@ -1,0 +1,642 @@
+@font-face {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "yartu-icons";
+  src: url("yartu-icons.eot?2b157972620aa0a38cea806705c7a212?#iefix") format("embedded-opentype"),
+url("yartu-icons.woff?2b157972620aa0a38cea806705c7a212") format("woff"),
+url("yartu-icons.ttf?2b157972620aa0a38cea806705c7a212") format("truetype"),
+url("yartu-icons.svg?2b157972620aa0a38cea806705c7a212#yartu-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.yi {
+  font-family: yartu-icons !important;
+  line-height: 1 !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.yi:before {
+  --webkit-backface-visibility:hidden;
+  backface-visibility: hidden;
+}
+
+.yi-add-contact:before {
+  content: "\f101";
+}
+.yi-add-reaction:before {
+  content: "\f102";
+}
+.yi-add-table:before {
+  content: "\f103";
+}
+.yi-add-user:before {
+  content: "\f104";
+}
+.yi-add:before {
+  content: "\f105";
+}
+.yi-address-book:before {
+  content: "\f106";
+}
+.yi-address:before {
+  content: "\f107";
+}
+.yi-alert:before {
+  content: "\f108";
+}
+.yi-alignment:before {
+  content: "\f109";
+}
+.yi-all-notes:before {
+  content: "\f10a";
+}
+.yi-all-repository:before {
+  content: "\f10b";
+}
+.yi-android:before {
+  content: "\f10c";
+}
+.yi-apple:before {
+  content: "\f10d";
+}
+.yi-archive:before {
+  content: "\f10e";
+}
+.yi-arrow-down:before {
+  content: "\f10f";
+}
+.yi-arrow-left:before {
+  content: "\f110";
+}
+.yi-arrow-right:before {
+  content: "\f111";
+}
+.yi-arrow-up:before {
+  content: "\f112";
+}
+.yi-attach:before {
+  content: "\f113";
+}
+.yi-backward:before {
+  content: "\f114";
+}
+.yi-board:before {
+  content: "\f115";
+}
+.yi-bold:before {
+  content: "\f116";
+}
+.yi-book:before {
+  content: "\f117";
+}
+.yi-card-kanban:before {
+  content: "\f118";
+}
+.yi-chat:before {
+  content: "\f119";
+}
+.yi-check-double:before {
+  content: "\f11a";
+}
+.yi-check:before {
+  content: "\f11b";
+}
+.yi-checked:before {
+  content: "\f11c";
+}
+.yi-chevron-down:before {
+  content: "\f11d";
+}
+.yi-chevron-left:before {
+  content: "\f11e";
+}
+.yi-chevron-right:before {
+  content: "\f11f";
+}
+.yi-chevron-up:before {
+  content: "\f120";
+}
+.yi-clock:before {
+  content: "\f121";
+}
+.yi-close:before {
+  content: "\f122";
+}
+.yi-cog-setting-alt:before {
+  content: "\f123";
+}
+.yi-collapse:before {
+  content: "\f124";
+}
+.yi-conference:before {
+  content: "\f125";
+}
+.yi-contact:before {
+  content: "\f126";
+}
+.yi-convert-note:before {
+  content: "\f127";
+}
+.yi-copy:before {
+  content: "\f128";
+}
+.yi-delete-column:before {
+  content: "\f129";
+}
+.yi-delete-row:before {
+  content: "\f12a";
+}
+.yi-delete-table:before {
+  content: "\f12b";
+}
+.yi-delete:before {
+  content: "\f12c";
+}
+.yi-do-not-distrub:before {
+  content: "\f12d";
+}
+.yi-download:before {
+  content: "\f12e";
+}
+.yi-downloading:before {
+  content: "\f12f";
+}
+.yi-downward:before {
+  content: "\f130";
+}
+.yi-draft:before {
+  content: "\f131";
+}
+.yi-drag:before {
+  content: "\f132";
+}
+.yi-drive:before {
+  content: "\f133";
+}
+.yi-duplicate:before {
+  content: "\f134";
+}
+.yi-email-contact:before {
+  content: "\f135";
+}
+.yi-error:before {
+  content: "\f136";
+}
+.yi-expand:before {
+  content: "\f137";
+}
+.yi-export:before {
+  content: "\f138";
+}
+.yi-eye-off:before {
+  content: "\f139";
+}
+.yi-eye:before {
+  content: "\f13a";
+}
+.yi-family:before {
+  content: "\f13b";
+}
+.yi-file-request:before {
+  content: "\f13c";
+}
+.yi-file:before {
+  content: "\f13d";
+}
+.yi-filter:before {
+  content: "\f13e";
+}
+.yi-flag-priority-filled:before {
+  content: "\f13f";
+}
+.yi-flag-priority:before {
+  content: "\f140";
+}
+.yi-flash:before {
+  content: "\f141";
+}
+.yi-folder:before {
+  content: "\f142";
+}
+.yi-forward:before {
+  content: "\f143";
+}
+.yi-frequently-board:before {
+  content: "\f144";
+}
+.yi-frequently-contact:before {
+  content: "\f145";
+}
+.yi-grid-cells:before {
+  content: "\f146";
+}
+.yi-heading:before {
+  content: "\f147";
+}
+.yi-highlight:before {
+  content: "\f148";
+}
+.yi-history-alt:before {
+  content: "\f149";
+}
+.yi-home:before {
+  content: "\f14a";
+}
+.yi-host:before {
+  content: "\f14b";
+}
+.yi-image:before {
+  content: "\f14c";
+}
+.yi-import:before {
+  content: "\f14d";
+}
+.yi-in-the-office:before {
+  content: "\f14e";
+}
+.yi-inbox:before {
+  content: "\f14f";
+}
+.yi-info:before {
+  content: "\f150";
+}
+.yi-inline-code:before {
+  content: "\f151";
+}
+.yi-invited-conference:before {
+  content: "\f152";
+}
+.yi-italic:before {
+  content: "\f153";
+}
+.yi-join-conference:before {
+  content: "\f154";
+}
+.yi-label-tag:before {
+  content: "\f155";
+}
+.yi-label:before {
+  content: "\f156";
+}
+.yi-layout:before {
+  content: "\f157";
+}
+.yi-leave-alt:before {
+  content: "\f158";
+}
+.yi-line:before {
+  content: "\f159";
+}
+.yi-link:before {
+  content: "\f15a";
+}
+.yi-list-view:before {
+  content: "\f15b";
+}
+.yi-load:before {
+  content: "\f15c";
+}
+.yi-location:before {
+  content: "\f15d";
+}
+.yi-lock:before {
+  content: "\f15e";
+}
+.yi-mail-add:before {
+  content: "\f15f";
+}
+.yi-mail-collection:before {
+  content: "\f160";
+}
+.yi-mail-send:before {
+  content: "\f161";
+}
+.yi-manage-duplicate:before {
+  content: "\f162";
+}
+.yi-maximize:before {
+  content: "\f163";
+}
+.yi-mention:before {
+  content: "\f164";
+}
+.yi-menu-outline:before {
+  content: "\f165";
+}
+.yi-merge-table:before {
+  content: "\f166";
+}
+.yi-merge:before {
+  content: "\f167";
+}
+.yi-mic-off:before {
+  content: "\f168";
+}
+.yi-mic:before {
+  content: "\f169";
+}
+.yi-minimize:before {
+  content: "\f16a";
+}
+.yi-minus:before {
+  content: "\f16b";
+}
+.yi-more:before {
+  content: "\f16c";
+}
+.yi-move:before {
+  content: "\f16d";
+}
+.yi-my-calendar:before {
+  content: "\f16e";
+}
+.yi-my-client:before {
+  content: "\f16f";
+}
+.yi-my-contact:before {
+  content: "\f170";
+}
+.yi-my-project:before {
+  content: "\f171";
+}
+.yi-my-task:before {
+  content: "\f172";
+}
+.yi-new-conference:before {
+  content: "\f173";
+}
+.yi-no-spam:before {
+  content: "\f174";
+}
+.yi-note:before {
+  content: "\f175";
+}
+.yi-notebook:before {
+  content: "\f176";
+}
+.yi-notification:before {
+  content: "\f177";
+}
+.yi-on-break:before {
+  content: "\f178";
+}
+.yi-open-folder:before {
+  content: "\f179";
+}
+.yi-order-ascending:before {
+  content: "\f17a";
+}
+.yi-order-default:before {
+  content: "\f17b";
+}
+.yi-order-descending:before {
+  content: "\f17c";
+}
+.yi-orderlist:before {
+  content: "\f17d";
+}
+.yi-out-of-office:before {
+  content: "\f17e";
+}
+.yi-out-sicky:before {
+  content: "\f17f";
+}
+.yi-palette:before {
+  content: "\f180";
+}
+.yi-paragraph-center:before {
+  content: "\f181";
+}
+.yi-paragraph-justify:before {
+  content: "\f182";
+}
+.yi-paragraph-left:before {
+  content: "\f183";
+}
+.yi-paragraph-right:before {
+  content: "\f184";
+}
+.yi-path:before {
+  content: "\f185";
+}
+.yi-permission:before {
+  content: "\f186";
+}
+.yi-phone:before {
+  content: "\f187";
+}
+.yi-pin:before {
+  content: "\f188";
+}
+.yi-pinned:before {
+  content: "\f189";
+}
+.yi-play-circle:before {
+  content: "\f18a";
+}
+.yi-play:before {
+  content: "\f18b";
+}
+.yi-print:before {
+  content: "\f18c";
+}
+.yi-question-mark:before {
+  content: "\f18d";
+}
+.yi-quote:before {
+  content: "\f18e";
+}
+.yi-rain:before {
+  content: "\f18f";
+}
+.yi-recent:before {
+  content: "\f190";
+}
+.yi-redo:before {
+  content: "\f191";
+}
+.yi-reminder:before {
+  content: "\f192";
+}
+.yi-remove-cover:before {
+  content: "\f193";
+}
+.yi-rename:before {
+  content: "\f194";
+}
+.yi-repeat:before {
+  content: "\f195";
+}
+.yi-repository:before {
+  content: "\f196";
+}
+.yi-restore:before {
+  content: "\f197";
+}
+.yi-rotate-screen:before {
+  content: "\f198";
+}
+.yi-search:before {
+  content: "\f199";
+}
+.yi-sections:before {
+  content: "\f19a";
+}
+.yi-send-with-email:before {
+  content: "\f19b";
+}
+.yi-set-cover:before {
+  content: "\f19c";
+}
+.yi-set-deadline:before {
+  content: "\f19d";
+}
+.yi-set-password:before {
+  content: "\f19e";
+}
+.yi-shared-address-book:before {
+  content: "\f19f";
+}
+.yi-shared-note:before {
+  content: "\f1a0";
+}
+.yi-shared-project:before {
+  content: "\f1a1";
+}
+.yi-shared-with-me:before {
+  content: "\f1a2";
+}
+.yi-sign-out:before {
+  content: "\f1a3";
+}
+.yi-spam:before {
+  content: "\f1a4";
+}
+.yi-star-filled:before {
+  content: "\f1a5";
+}
+.yi-star:before {
+  content: "\f1a6";
+}
+.yi-sticky-note:before {
+  content: "\f1a7";
+}
+.yi-strike-through:before {
+  content: "\f1a8";
+}
+.yi-sub-notebook:before {
+  content: "\f1a9";
+}
+.yi-table-cells:before {
+  content: "\f1aa";
+}
+.yi-task:before {
+  content: "\f1ab";
+}
+.yi-text-color:before {
+  content: "\f1ac";
+}
+.yi-text:before {
+  content: "\f1ad";
+}
+.yi-time:before {
+  content: "\f1ae";
+}
+.yi-to-folder:before {
+  content: "\f1af";
+}
+.yi-todo-list:before {
+  content: "\f1b0";
+}
+.yi-transfer:before {
+  content: "\f1b1";
+}
+.yi-trash:before {
+  content: "\f1b2";
+}
+.yi-unarchive:before {
+  content: "\f1b3";
+}
+.yi-unchecked:before {
+  content: "\f1b4";
+}
+.yi-underline:before {
+  content: "\f1b5";
+}
+.yi-undo:before {
+  content: "\f1b6";
+}
+.yi-unlock:before {
+  content: "\f1b7";
+}
+.yi-unorder-list:before {
+  content: "\f1b8";
+}
+.yi-unstar:before {
+  content: "\f1b9";
+}
+.yi-upload:before {
+  content: "\f1ba";
+}
+.yi-uploading:before {
+  content: "\f1bb";
+}
+.yi-upward:before {
+  content: "\f1bc";
+}
+.yi-user:before {
+  content: "\f1bd";
+}
+.yi-vacation:before {
+  content: "\f1be";
+}
+.yi-video-off:before {
+  content: "\f1bf";
+}
+.yi-video-recording:before {
+  content: "\f1c0";
+}
+.yi-video:before {
+  content: "\f1c1";
+}
+.yi-view-in-folder:before {
+  content: "\f1c2";
+}
+.yi-volume-up:before {
+  content: "\f1c3";
+}
+.yi-web:before {
+  content: "\f1c4";
+}
+.yi-wind:before {
+  content: "\f1c5";
+}
+.yi-windows:before {
+  content: "\f1c6";
+}
+.yi-work-from-home:before {
+  content: "\f1c7";
+}
+.yi-workflow:before {
+  content: "\f1c8";
+}
+.yi-working-outside:before {
+  content: "\f1c9";
+}
+.yi-working-status:before {
+  content: "\f1ca";
+}
+.yi-zoom-in:before {
+  content: "\f1cb";
+}
+.yi-zoom-out:before {
+  content: "\f1cc";
+}
