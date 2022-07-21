@@ -36,8 +36,8 @@ module.exports = {
     navbar: [
       // NavbarItem
       {
-        text: "Guide",
-        link: "/guide/",
+        text: "Documentation",
+        link: "/documentation/getstarted/installation.md",
       },
       // {
       //   text: "Languages",
@@ -59,131 +59,153 @@ module.exports = {
     ],
     sidebar: {
       "/": [],
-      "/guide/": [
+      "/getstarted/": [
         {
-          text: "Guide",
+          text: "Get Started",
+          collapsible: false,
+          children: [
+            {
+              text: "Installation",
+              link: "installation.md",
+            },
+          ],
+        },
+      ],
+      "/documentation/": [
+        {
+          text: "Get Started",
+          collapsible: false,
+          children: [
+            {
+              text: "Installation",
+              link: "../getstarted/installation.md",
+            },
+          ],
+        },
+        {
+          text: "Components",
           collapsible: false,
           children: [
             {
               text: "Accordion",
-              link: "accordion.md",
+              link: "../components/accordion.md",
             },
             
             {
               text: "Avatar Group",
-              link: "avatar-group.md",
+              link: "../components/avatar-group.md",
             },
             {
               text: "Avatar",
-              link: "avatar.md",
+              link: "../components/avatar.md",
             },
             {
               text: "Badge",
-              link: "badge.md",
+              link: "../components/badge.md",
             },
             {
               text: "Bread Crumb",
-              link: "bread-crumb.md",
+              link: "../components/bread-crumb.md",
             },
             {
               text: "Button",
-              link: "button.md",
+              link: "../components/button.md",
             },
             {
               text: "Card",
-              link: "card.md",
+              link: "../components/card.md",
             },
             {
               text: "Checkbox",
-              link: "checkbox.md",
+              link: "../components/checkbox.md",
             },
             {
               text: "Collapsible Panel",
-              link: "collapsible-panel.md",
+              link: "../components/collapsible-panel.md",
             },
             {
               text: "Curtain Menu",
-              link: "curtain-menu.md",
+              link: "../components/curtain-menu.md",
             },
             {
               text: "Dropdown",
-              link: "dropdown.md",
+              link: "../components/dropdown.md",
             },
             {
               text: "Dropdown Drawer",
-              link: "dropdown-drawer.md",
+              link: "../components/dropdown-drawer.md",
             },
             {
               text: "Icon",
-              link: "icon.md",
+              link: "../components/icon.md",
             },
             {
               text: "Input",
-              link: "input.md",
+              link: "../components/input.md",
             },
             {
               text: "Loading",
-              link: "loading.md",
+              link: "../components/loading.md",
             },
             {
               text: "Modal",
-              link: "modal.md",
+              link: "../components/modal.md",
             },
             {
               text: "Navigation Drawer",
-              link: "navigation-drawer.md",
+              link: "../components/navigation-drawer.md",
             },
             {
               text: "Note Card",
-              link: "note-card.md",
+              link: "../components/note-card.md",
             },
             {
               text: "Pagination",
-              link: "pagination.md",
+              link: "../components/pagination.md",
             },
             {
               text: "Progress Bar",
-              link: "progress-bar.md",
+              link: "../components/progress-bar.md",
             },
             {
               text: "Progress Ring",
-              link: "progress-ring.md",
+              link: "../components/progress-ring.md",
             },
             {
               text: "Radio Button",
-              link: "radio.md",
+              link: "../components/radio.md",
             },
             {
               text: "Shaped Card",
-              link: "shaped-card.md",
+              link: "../components/shaped-card.md",
             },
             {
               text: "Simple Table",
-              link: "simple-table.md",
+              link: "../components/simple-table.md",
             },
             {
               text: "Snackbar",
-              link: "snackbar.md",
+              link: "../components/snackbar.md",
             },
             {
               text: "Switch",
-              link: "switch.md",
+              link: "../components/switch.md",
             },
             {
               text: "Tag",
-              link: "tag.md",
+              link: "../components/tag.md",
             },
             {
               text: "Textarea",
-              link: "textarea.md",
+              link: "../components/textarea.md",
             },
             {
               text: "Toast",
-              link: "toast.md",
+              link: "../components/toast.md",
             },
             {
               text: "Tooltip",
-              link: "tooltip.md",
+              link: "../components/tooltip.md",
             },
           ],
         },
@@ -210,7 +232,7 @@ module.exports = {
   }),
   plugins: [
     registerComponentsPlugin({
-      componentsDir: path.resolve(__dirname, "./components/"),
+      componentsDir: path.resolve(__dirname, "./ComponentsUsage/"),
       componentsPatterns: "**/*",
     }),
   ],

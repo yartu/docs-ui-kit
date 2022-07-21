@@ -2,7 +2,7 @@
   <usage>
     <template #title>Dropdown Drawer</template>
     <template #component>
-      <div class="w-72">
+      <div class=" w-3/4">
         <y-dropdown-drawer :active="active" toggleIcon="yi yi-arrow-right" prefix="yi yi-folder" title="Folders">
           <y-dropdown-drawer-item prefix="yi yi-folder " class="gap-1">
             Folder

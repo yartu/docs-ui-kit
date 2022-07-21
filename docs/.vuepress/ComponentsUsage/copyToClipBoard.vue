@@ -1,5 +1,5 @@
 <template>
-  <div class="border">
+  <div class="border rounded-lg">
     <pre class="!p-4 !m-0 relative">
         <y-button class="absolute top-4 right-4" square secondary icon="yi yi-copy" @click="copyComponentToClipboard()"></y-button>
         <p ref="code_section"><slot></slot></p>

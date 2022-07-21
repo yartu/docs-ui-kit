@@ -2,7 +2,7 @@
   <usage>
     <template #title>Curtain Menu</template>
     <template #component
-      ><div class="relative w-full h-full">
+      ><div class=" w-full h-full">
         <div class="w-full h-full flex items-center justify-center">
             Some content here
         </div>
