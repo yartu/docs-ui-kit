@@ -112,10 +112,6 @@
 <script setup>
 import { ref } from "vue";
 
-const showModal = ref(false),text=ref("");
+const text=ref("");
 
-function getModal() {
-  if (showModal.value == false) showModal.value = true;
-  else showModal.value = false;
-}
 </script>
