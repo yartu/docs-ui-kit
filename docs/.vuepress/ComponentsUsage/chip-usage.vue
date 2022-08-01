@@ -15,10 +15,4 @@
 <script setup>
 import { ref } from "vue";
 
-const close = ref(false);
-
-function openPanel() {
-  if (close.value == false) close.value = true;
-  else close.value = false;
-}
 </script>
