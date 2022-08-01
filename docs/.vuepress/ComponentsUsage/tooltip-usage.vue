@@ -36,6 +36,11 @@
           <td>false</td>
         </tr>
         <tr>
+          <td>bottom</td>
+          <td>Boolean</td>
+          <td>false</td>
+        </tr>
+        <tr>
           <td>left</td>
           <td>Boolean</td>
           <td>false</td>
