@@ -5,6 +5,7 @@
       <y-checkbox
         inputValue="checkConfirm"
         label="Check it!"
+        id="checkbox"
         :disabled="disabled"
         :bg="bg"
         :checked="checked"
@@ -36,7 +37,7 @@
     </template>
   </usage>
   <copy-to-clip-board>
-    &lt;y-checkbox{{ "\n" }} inputValue="checkConfirm"{{ "\n" }} label="Check
+    &lt;y-checkbox{{ "\n" }} id="checkbox" inputValue="checkConfirm"{{ "\n" }} label="Check
     it!"{{ "\n" }} class="gap-2" {{ disabled ? "\n disabled" : ""
     }}{{ checked ? "\n checked" : "" }}{{ bg ? "\n bg" : "" }}&nbsp;&gt;Check
     it!&lt;/y-checkbox&gt;
@@ -59,6 +60,11 @@
         </tr>
         <tr>
           <td>label</td>
+          <td>String</td>
+          <td>''</td>
+        </tr>
+        <tr>
+          <td>id</td>
           <td>String</td>
           <td>''</td>
         </tr>
