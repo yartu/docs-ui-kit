@@ -1,3 +1,3 @@
 <ClientOnly>
-<chip-group></chip-group>
+<chip-group-usage></chip-group-usage>
 </ClientOnly>

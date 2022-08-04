@@ -2,7 +2,10 @@
   <usage>
     <template #title>Chip Group</template>
     <template #component>
-      
+      <y-chip :close="close">Sample Chip</y-chip>
+      <y-chip :close="close">Sample Chip</y-chip>
+      <y-chip :close="close">Sample Chip</y-chip>
+      <y-chip :close="close">Sample Chip</y-chip>
     </template>
   </usage>
   <copy-to-clip-board>
