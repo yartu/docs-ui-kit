@@ -120,8 +120,16 @@ module.exports = {
               link: "../components/checkbox.md",
             },
             {
+              text: "Chip",
+              link: "../components/chip.md",
+            },
+            {
               text: "Collapsible Panel",
               link: "../components/collapsible-panel.md",
+            },
+            {
+              text: "Color Picker",
+              link: "../components/color-picker.md",
             },
             {
               text: "Curtain Menu",
@@ -134,6 +142,10 @@ module.exports = {
             {
               text: "Dropdown Drawer",
               link: "../components/dropdown-drawer.md",
+            },
+            {
+              text: "Form",
+              link: "../components/form.md",
             },
             {
               text: "Icon",
