@@ -3,7 +3,7 @@
     <template #title>Badge</template>
     <template #component
       ><y-badge
-        :size="sizeVal == '20' ? 'base' : 'md'"
+        :size="sizeVal == '20' ? 'base' : 'sm'"
         :border="border"
         :ping="ping"
         :bottom="bottom"
@@ -157,7 +157,7 @@
         : '\n borderColor="' + borderColor + '"'
     }}{{ bottom ? "\n bottom" : "" }}{{ left ? "\n left" : ""
     }}{{ ping ? "\n ping" : "" }}{{ visible ? "" : "\n visible"
-    }}{{ sizeVal == "10" ? '\n size="md"' : "" }}&nbsp;&gt;Sample
+    }}{{ sizeVal == "10" ? '\n size="sm"' : "" }}&nbsp;&gt;Sample
     Badge&lt;/y-badge&gt;
   </copy-to-clip-board>
   <div class="flex flex-col mt-7 gap-1">

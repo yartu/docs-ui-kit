@@ -24,10 +24,10 @@
 </usage>
   <copy-to-clip-board>
     
-      &lt;y-avatar-group size="md"&gt;{{"\n"}}
-       &lt;y-avatar size="md" image="/images/avatar.jpeg"&gt;&lt;/y-avatar&gt;{{"\n"}}
-       &lt;y-avatar size="md" image="/images/john.jpeg"&gt;&lt;/y-avatar&gt;{{"\n"}}
-       &lt;y-avatar size="md" label="CJ"&gt;&lt;/y-avatar&gt;{{"\n"}}
+      &lt;y-avatar-group size="md"&gt;{{"\n  "}}
+       &lt;y-avatar size="md" image="/images/avatar.jpeg"&gt;&lt;/y-avatar&gt;{{"\n  "}}
+       &lt;y-avatar size="md" image="/images/john.jpeg"&gt;&lt;/y-avatar&gt;{{"\n  "}}
+       &lt;y-avatar size="md" label="CJ"&gt;&lt;/y-avatar&gt;{{"\n  "}}
        &lt;y-avatar size="md" label="+1"&gt;&lt;/y-avatar&gt;{{"\n"}}
       &lt;/y-avatar-group&gt;
   

@@ -2,7 +2,10 @@
   <usage>
     <template #title>Chip Group</template>
     <template #component>
-      
+      <y-chip :close="close">Sample Chip</y-chip>
+      <y-chip :close="close">Sample Chip</y-chip>
+      <y-chip :close="close">Sample Chip</y-chip>
+      <y-chip :close="close">Sample Chip</y-chip>
     </template>
   </usage>
   <copy-to-clip-board>
@@ -15,10 +18,4 @@
 <script setup>
 import { ref } from "vue";
 
-const close = ref(false);
-
-function openPanel() {
-  if (close.value == false) close.value = true;
-  else close.value = false;
-}
 </script>

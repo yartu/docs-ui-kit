@@ -6,6 +6,7 @@
         <y-radio
           checked
           label="Choose one"
+          id="option-1"
           class="gap-1"
           v-model="choice"
           inputValue="choice1"
@@ -16,6 +17,7 @@
         <y-radio
           label="Choose two"
           class="gap-1"
+          id="option-2"
           v-model="choice"
           inputValue="choice2"
           :color="color"
@@ -27,8 +29,8 @@
   </usage>
 
   <copy-to-clip-board>
-    &lt;y-radio label="Choose one" class="gap-1"
-    v-model="choice1"&gt;&lt;/y-radio&gt;{{ "\n" }} &lt;y-radio label="Choose
+    &lt;y-radio id="option-1" label="Choose one" class="gap-1"
+    v-model="choice1"&gt;&lt;/y-radio&gt;{{ "\n" }} &lt;y-radio id="option-2" label="Choose
     one" class="gap-1" v-model="choice2"&gt;&lt;/y-radio&gt;{{ "\n" }}
   </copy-to-clip-board>
   <div class="flex flex-col mt-7 gap-1">
@@ -44,6 +46,11 @@
       <tbody>
         <tr>
           <td>label</td>
+          <td>String</td>
+          <td>''</td>
+        </tr>
+        <tr>
+          <td>id</td>
           <td>String</td>
           <td>''</td>
         </tr>
@@ -85,31 +92,10 @@
 <script setup>
 import { ref } from "vue";
 
-const disabled = ref(false),
-  bgColor = ref("#ffffff"),
+const bgColor = ref("#ffffff"),
   color = ref("#ffffff"),
   borderColor = ref("#e5ebf5ff");
 
 const choice = ref(null);
 
-function setDisabled() {
-  console.log("dsb");
-  if (disabled.value == false) disabled.value = true;
-  else disabled.value = false;
-}
-function setActive() {
-  console.log("act");
-  if (active.value == false) {
-    active.value = true;
-    app.value = true;
-  } else {
-    active.value = false;
-    app.value = false;
-  }
-}
-function setLoading() {
-  console.log("act");
-  if (loading.value == false) loading.value = true;
-  else loading.value = false;
-}
 </script>

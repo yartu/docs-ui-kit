@@ -1,8 +1,8 @@
 <template>
   <usage>
     <template #title>Input</template>
-    <template #component
-      ><y-input
+    <template #component>
+      <y-input
         label="Search"
         :dropdown="dropdown"
         dropdownTitle="Select"
@@ -15,10 +15,12 @@
         :warning="inputFeedback == 'warning' ? true : false"
         :error="inputFeedback == 'error' ? true : false"
         :info="inputFeedback == 'info' ? true : false"
-        ><template #icon><i class="yi yi-search"></i></template>
-        <template #helper>Search for anything</template></y-input
-    ></template>
-   
+      >
+        <template #icon><i class="yi yi-search"></i></template>
+        <template #helper>Search for anything</template>
+      </y-input>
+    </template>
+
     <template #rightProps>
       <div class="flex flex-col gap-1">
           <y-radio

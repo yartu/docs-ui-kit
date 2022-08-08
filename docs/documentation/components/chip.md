@@ -1,3 +1,3 @@
 <ClientOnly>
-  <collapsible-panel-usage></collapsible-panel-usage>
+  <chip-usage></chip-usage>
 </ClientOnly>

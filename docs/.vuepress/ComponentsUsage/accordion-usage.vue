@@ -42,8 +42,8 @@
     </template>
   </usage>
   <copy-to-clip-board>
-    &lt;y-accordion collapse title="Sample"{{ icon == "" ? "" : '\nicon="' + icon + '"'
-    }}{{ hr ? "\nhr" : "" }}&gt;Lorem ipsum dolo...&lt;/y-accordion&gt;
+    &lt;y-accordion collapse title="Sample"{{ icon == "" ? "" : '\n icon="' + icon + '"'
+    }}{{ hr ? "\n hr" : "" }}&gt;Lorem ipsum dolo...&lt;/y-accordion&gt;
   </copy-to-clip-board>
 
   <div class="flex flex-col mt-7 gap-1">

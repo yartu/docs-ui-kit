@@ -66,11 +66,6 @@
           <td>false</td>
         </tr>
         <tr>
-          <td>label</td>
-          <td>String</td>
-          <td>''</td>
-        </tr>
-        <tr>
           <td>inputValue</td>
           <td>String</td>
           <td>This prop is required!</td>

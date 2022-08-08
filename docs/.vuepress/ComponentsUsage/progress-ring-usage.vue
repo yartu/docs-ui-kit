@@ -43,6 +43,11 @@
           <td>'#DBE4FF'</td>
         </tr>
         <tr>
+          <td>ringColor</td>
+          <td>String</td>
+          <td>'#3663F2'</td>
+        </tr>
+        <tr>
           <td>title</td>
           <td>String</td>
           <td>'750MB'</td>
