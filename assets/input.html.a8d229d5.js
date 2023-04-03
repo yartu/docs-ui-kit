@@ -1,0 +1,1 @@
+import{_,r as e,o as a,c,a as n,w as l}from"./app.c45221f8.js";const s={};function r(u,i){const t=e("input-usage"),o=e("ClientOnly");return a(),c("div",null,[n(o,null,{default:l(()=>[n(t)]),_:1})])}var m=_(s,[["render",r],["__file","input.html.vue"]]);export{m as default};

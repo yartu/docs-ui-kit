@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-7162d8ce","path":"/documentation/components/note-card.html","title":"","lang":"en-US","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1680515740000,"contributors":[{"name":"M\xFCcahit B\xFCy\xFCky\u0131lmaz","email":"mucahit@konya.edu.tr","commits":1}]},"filePathRelative":"documentation/components/note-card.md"}');export{t as data};

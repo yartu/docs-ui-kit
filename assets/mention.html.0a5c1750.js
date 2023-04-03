@@ -1,0 +1,1 @@
+import{_,r as e,o as a,c,a as n,w as l}from"./app.c45221f8.js";const s={};function r(m,i){const t=e("mention-usage"),o=e("ClientOnly");return a(),c("div",null,[n(o,null,{default:l(()=>[n(t)]),_:1})])}var f=_(s,[["render",r],["__file","mention.html.vue"]]);export{f as default};

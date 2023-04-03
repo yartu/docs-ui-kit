@@ -1,0 +1,1 @@
+import{_ as o,r as e,o as _,c as a,a as n,w as l}from"./app.c45221f8.js";const s={};function r(i,p){const t=e("chip-usage"),c=e("ClientOnly");return _(),a("div",null,[n(c,null,{default:l(()=>[n(t)]),_:1})])}var u=o(s,[["render",r],["__file","chip.html.vue"]]);export{u as default};

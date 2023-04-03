@@ -1,0 +1,1 @@
+import{_ as a,r as e,o as c,c as l,a as o,w as s}from"./app.c45221f8.js";const r={};function _(u,m){const n=e("carousel-usage"),t=e("ClientOnly");return c(),l("div",null,[o(t,null,{default:s(()=>[o(n)]),_:1})])}var i=a(r,[["render",_],["__file","carousel.html.vue"]]);export{i as default};

@@ -1,0 +1,1 @@
+import{_ as c,r as e,o as l,c as o,a as n,w as r}from"./app.c45221f8.js";const _={};function s(d,m){const a=e("calendar-usage"),t=e("ClientOnly");return l(),o("div",null,[n(t,null,{default:r(()=>[n(a)]),_:1})])}var f=c(_,[["render",s],["__file","calendar.html.vue"]]);export{f as default};

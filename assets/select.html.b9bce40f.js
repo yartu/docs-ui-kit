@@ -1,0 +1,1 @@
+import{_ as l,r as e,o,c as s,a as t,w as _}from"./app.c45221f8.js";const a={};function r(m,u){const n=e("select-usage"),c=e("ClientOnly");return o(),s("div",null,[t(c,null,{default:_(()=>[t(n)]),_:1})])}var i=l(a,[["render",r],["__file","select.html.vue"]]);export{i as default};

@@ -1,0 +1,1 @@
+import{_ as o,r as e,o as s,c as _,a as t,w as a}from"./app.c45221f8.js";const l={};function r(i,m){const n=e("switch-usage"),c=e("ClientOnly");return s(),_("div",null,[t(c,null,{default:a(()=>[t(n)]),_:1})])}var f=o(l,[["render",r],["__file","switch.html.vue"]]);export{f as default};

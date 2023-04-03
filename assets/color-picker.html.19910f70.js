@@ -1,0 +1,1 @@
+import{_ as r,r as e,o as t,c as l,a as o,w as _}from"./app.c45221f8.js";const a={};function s(i,p){const c=e("color-picker-usage"),n=e("ClientOnly");return t(),l("div",null,[o(n,null,{default:_(()=>[o(c)]),_:1})])}var u=r(a,[["render",s],["__file","color-picker.html.vue"]]);export{u as default};

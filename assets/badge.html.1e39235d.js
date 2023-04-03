@@ -1,0 +1,1 @@
+import{_ as o,r as e,o as _,c,a as n,w as l}from"./app.c45221f8.js";const s={};function r(d,m){const t=e("badge-usage"),a=e("ClientOnly");return _(),c("div",null,[n(a,null,{default:l(()=>[n(t)]),_:1})])}var f=o(s,[["render",r],["__file","badge.html.vue"]]);export{f as default};

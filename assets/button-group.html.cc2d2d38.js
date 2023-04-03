@@ -1,0 +1,1 @@
+import{_ as r,r as t,o as _,c as a,a as e,w as c}from"./app.c45221f8.js";const l={};function u(s,p){const o=t("button-group-usage"),n=t("ClientOnly");return _(),a("div",null,[e(n,null,{default:c(()=>[e(o)]),_:1})])}var f=r(l,[["render",u],["__file","button-group.html.vue"]]);export{f as default};

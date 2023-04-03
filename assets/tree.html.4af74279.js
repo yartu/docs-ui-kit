@@ -1,0 +1,1 @@
+import{_ as r,r as e,o as _,c as a,a as t,w as c}from"./app.c45221f8.js";const l={};function s(m,u){const n=e("tree-usage"),o=e("ClientOnly");return _(),a("div",null,[t(o,null,{default:c(()=>[t(n)]),_:1})])}var i=r(l,[["render",s],["__file","tree.html.vue"]]);export{i as default};

@@ -1,0 +1,11 @@
+import{_ as h,I as l,r as o,o as f,c as y,a as r,w as n,d as t,K as z,$ as S,e as c,t as s,F as V,b as k}from"./app.c45221f8.js";const B=c("Avatar"),N={class:"flex flex-col gap-2"},C=t("p",{class:"font-semibold"},"Avatar Size",-1),w={class:"flex flex-col"},D={class:"slidecontainer"},P={class:"flex items-center gap-2"},T=k('<div class="flex flex-col mt-7 gap-1"><p class="font-semibold text-xl">Component Props</p><table><thead><tr><th>Prop Name</th><th>Type</th><th>Default</th></tr></thead><tbody><tr><td>label</td><td>String</td><td>null</td></tr><tr><td>image</td><td>String</td><td>null</td></tr><tr><td>size</td><td>String</td><td>&#39;md&#39;</td></tr><tr><td>shape</td><td>String</td><td>&#39;circle&#39;</td></tr><tr><td>color</td><td>String</td><td>&#39;blue&#39;</td></tr><tr><td>border</td><td>Boolean</td><td>false</td></tr></tbody></table></div>',1),U={__name:"avatar-usage",setup(j){const a=l(!1),d=l(null);l(null);const e=l("30"),u=l("circle");function v(){a.value==!1?a.value=!0:a.value=!1}return(_,i)=>{const p=o("y-avatar"),g=o("y-checkbox"),m=o("usage"),x=o("copy-to-clip-board");return f(),y(V,null,[r(m,null,{title:n(()=>[B]),component:n(()=>[r(p,{size:e.value=="10"?"xs":e.value=="20"?"sm":e.value=="30"?"md":e.value=="40"?"lg":e.value=="50"?"xl":e.value=="60"?"2xl":e.value=="70"?"3xl":"4xl",label:d.value,image:"/docs-ui-kit/images/avatar.jpeg",shape:_.shape,border:a.value},null,8,["size","label","shape","border"])]),rightProps:n(()=>[t("div",N,[C,t("div",w,[t("div",D,[z(t("input",{type:"range",min:"10",max:"80",step:"10","onUpdate:modelValue":i[0]||(i[0]=b=>e.value=b),class:"slider",id:"myRange"},null,512),[[S,e.value]])])])]),t("div",P,[r(g,{onChange:v,inputValue:"border",label:"Border",shape:"",class:"gap-2"})])]),_:1}),r(x,null,{default:n(()=>[c(" <y-avatar "+s(u.value)+s(e.value=="10"?`
+ size="xs"`:e.value=="20"?`
+ size="sm"`:e.value=="40"?`
+ size="lg"`:e.value=="50"?`
+ size="xl"`:e.value=="60"?`
+ size="2xl"`:e.value=="70"?`
+ size="3xl"`:e.value=="80"?`
+ size="4xl"`:"")+s(`
+`)+' image="/images/avatar.jpeg"'+s(a.value?`
+ border`:"")+">"+s(d.value==null?"":`
+label="`+d.value+'"')+"</y-avatar> ",1)]),_:1}),T],64)}}};var F=h(U,[["__file","avatar-usage.vue"]]);export{F as default};

@@ -1,0 +1,1 @@
+import{_ as a,r as e,o,c as s,a as t,w as _}from"./app.c45221f8.js";const c={};function r(m,i){const l=e("simple-table-usage"),n=e("ClientOnly");return o(),s("div",null,[t(n,null,{default:_(()=>[t(l)]),_:1})])}var u=a(c,[["render",r],["__file","simple-table.html.vue"]]);export{u as default};

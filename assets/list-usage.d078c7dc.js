@@ -1,0 +1,8 @@
+import{_ as b,I as e,r as a,o as x,c as f,a as o,w as n,d as h,e as s,t,F as v,b as g}from"./app.c45221f8.js";const k=s("ListBox"),V=["onClick"],B=g('<div class="flex flex-col mt-7 gap-1"><p class="font-semibold text-xl">Component Props</p><table><thead><tr><th>Prop Name</th><th>Type</th><th>Default</th></tr></thead><tbody><tr><td>itemKey</td><td>String</td><td>id</td></tr><tr><td>multiple</td><td>Boolean</td><td>false</td></tr><tr><td>options</td><td>Array</td><td>required</td></tr><tr><td>modelValue</td><td></td><td></td></tr></tbody></table></div>',1),C={__name:"list-usage",setup(N){const m=e(["item 1","item 2","item 3","item 4"]);e(30);const i=e();e(!1);const d=e(!1);return(E,c)=>{const r=a("y-icon"),p=a("y-listbox"),u=a("usage"),_=a("copy-to-clip-board");return x(),f(v,null,[o(u,null,{title:n(()=>[k]),component:n(()=>[o(p,{multiple:d.value,options:m.value,modelValue:i.value,"onUpdate:modelValue":c[0]||(c[0]=l=>i.value=l)},{template:n(({item:l,onClick:y})=>[h("button",{onClick:w=>y(l),class:"flex w-full items-center gap-3.5 p-4 border-b border-BORDER hover:bg-LIGHTBLUE-6 transition-all duration-200"},[o(r,{name:"yi yi-book text-2xl text-GREY-1"}),s(" "+t(l),1),o(r,{name:"yi yi-check ml-auto"})],8,V)]),_:1},8,["multiple","options","modelValue"])]),_:1}),o(_,null,{default:n(()=>[s(" <y-listbox"+t(d.value?" multiple":"")+' :optins="options" v-model="selected" >'+t(`
+  `)+'<template #template="{item,onClick }">'+t(`
+   `)+' <button @click="onClick(item)">'+t(`
+    `)+" {item} "+t(`
+     `)+'<y-icon name="yi yi-check ml-auto" /> '+t(`
+    `)+"<button>"+t(`
+  `)+" </template>"+t(`
+ `)+"</y-listbox> ",1)]),_:1}),B],64)}}};var L=b(C,[["__file","list-usage.vue"]]);export{L as default};

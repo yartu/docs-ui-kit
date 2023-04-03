@@ -1,0 +1,1 @@
+import{_ as l,r as e,o,c as _,a as t,w as c}from"./app.c45221f8.js";const s={};function r(d,m){const a=e("data-table-usage"),n=e("ClientOnly");return o(),_("div",null,[t(n,null,{default:c(()=>[t(a)]),_:1})])}var f=l(s,[["render",r],["__file","data-table.html.vue"]]);export{f as default};

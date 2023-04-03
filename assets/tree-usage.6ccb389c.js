@@ -1,0 +1,11 @@
+import{_ as b,I as o,r as n,o as g,c as F,a as d,w as l,d as u,t as e,F as N,e as _,b as V}from"./app.c45221f8.js";const S=_("Tree"),B=u("span",null,"\u{1F4C1}",-1),C={class:"flex flex-col gap-1"},I={class:"font-bold pt-4"},k=_(" <y-tree "+e(`
+   `)+':items="treeData"'+e(`
+  `)+' :selected="selectedNode"'+e(`
+  `)+' :simple="simple"'+e(`
+  `)+' :expanded="expanded"'+e(`
+  `)+' @onSelect="handleSelect"'+e(`
+  `)+' v-model="selectedNodeId">'+e(`
+  `)+" <template #prefix>"+e(`
+   `)+" <span >\u{1F4C1}</span>"+e(`
+  `)+" </template>"+e(`
+`)+" </y-tree> "),D=V('<div class="flex flex-col mt-7 gap-1"><p class="font-semibold text-xl">Component Props</p><table><thead><tr><th>Prop Name</th><th>Type</th><th>Default</th></tr></thead><tbody><tr><td>items</td><td>Array</td><td>&#39;Required!&#39;</td></tr><tr><td>simple</td><td>Boolean</td><td>false</td></tr><tr><td>itemKey</td><td>undefined</td><td></td></tr><tr><td>folderKey</td><td>undefined</td><td></td></tr><tr><td>selected</td><td>Object</td><td></td></tr><tr><td>expanded</td><td>Boolean</td><td>false</td></tr></tbody></table></div>',1),P={__name:"tree-usage",setup(T){const a=o(!1),s=o(!1),f=[{id:1,name:"Folder 1",isFolder:!0,children:[{id:2,name:"File 1",isFolder:!1},{id:3,name:"File 2",isFolder:!1}]},{id:4,name:"Folder 2",isFolder:!0,children:[{id:5,name:"Folder 3",isFolder:!0,children:[{id:6,name:"File 3",isFolder:!1}]}]}],r=o(null),i=o(null),v=p=>{r.value=p,i.value=p.id};return(p,t)=>{const x=n("y-tree"),m=n("y-checkbox"),h=n("usage"),y=n("copy-to-clip-board");return g(),F(N,null,[d(h,null,{title:l(()=>[S]),component:l(()=>[d(x,{items:f,selected:r.value,simple:s.value,expanded:a.value,onOnSelect:v,modelValue:i.value,"onUpdate:modelValue":t[0]||(t[0]=c=>i.value=c)},{prefix:l(()=>[B]),_:1},8,["selected","simple","expanded","modelValue"])]),rightProps:l(()=>[u("div",C,[d(m,{onChange:t[1]||(t[1]=c=>s.value==!0?s.value=!1:s.value=!0),inputValue:"simple",label:"Simple",class:"gap-2"}),d(m,{onChange:t[2]||(t[2]=c=>a.value==!1?a.value=!0:a.value=!1),inputValue:"expanded",label:"Expanded",class:"gap-2"}),u("p",I,"Selected Item Id = "+e(r.value),1)])]),_:1}),d(y,null,{default:l(()=>[k]),_:1}),D],64)}}};var E=b(P,[["__file","tree-usage.vue"]]);export{E as default};

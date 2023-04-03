@@ -1,0 +1,1 @@
+import{_,r as t,o as a,c,a as e,w as l}from"./app.c45221f8.js";const s={};function r(u,m){const n=t("button-usage"),o=t("ClientOnly");return a(),c("div",null,[e(o,null,{default:l(()=>[e(n)]),_:1})])}var i=_(s,[["render",r],["__file","button.html.vue"]]);export{i as default};

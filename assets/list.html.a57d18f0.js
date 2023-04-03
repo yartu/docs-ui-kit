@@ -1,0 +1,1 @@
+import{_ as o,r as e,o as s,c as _,a as t,w as a}from"./app.c45221f8.js";const c={};function r(i,m){const n=e("list-usage"),l=e("ClientOnly");return s(),_("div",null,[t(l,null,{default:a(()=>[t(n)]),_:1})])}var f=o(c,[["render",r],["__file","list.html.vue"]]);export{f as default};

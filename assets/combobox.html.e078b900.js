@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-e5b2a79e","path":"/documentation/components/combobox.html","title":"","lang":"en-US","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1680515740000,"contributors":[{"name":"M\xFCcahit B\xFCy\xFCky\u0131lmaz","email":"mucahit@konya.edu.tr","commits":1}]},"filePathRelative":"documentation/components/combobox.md"}');export{t as data};

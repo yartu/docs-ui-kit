@@ -1,0 +1,1 @@
+import{_ as o,r as e,o as t,c,a as l,w as s}from"./app.c45221f8.js";const _={};function r(p,i){const n=e("collapsible-panel-usage"),a=e("ClientOnly");return t(),c("div",null,[l(a,null,{default:s(()=>[l(n)]),_:1})])}var u=o(_,[["render",r],["__file","collapsible-panel.html.vue"]]);export{u as default};

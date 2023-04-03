@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-d3a7c3c6","path":"/documentation/components/dropdown.html","title":"","lang":"en-US","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1680515740000,"contributors":[{"name":"M\xFCcahit B\xFCy\xFCky\u0131lmaz","email":"mucahit@konya.edu.tr","commits":1}]},"filePathRelative":"documentation/components/dropdown.md"}');export{t as data};

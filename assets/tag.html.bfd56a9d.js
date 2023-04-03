@@ -1,0 +1,1 @@
+import{_ as o,r as e,o as _,c,a as t,w as l}from"./app.c45221f8.js";const s={};function r(m,u){const n=e("tag-usage"),a=e("ClientOnly");return _(),c("div",null,[t(a,null,{default:l(()=>[t(n)]),_:1})])}var i=o(s,[["render",r],["__file","tag.html.vue"]]);export{i as default};

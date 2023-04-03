@@ -1,0 +1,1 @@
+import{_ as n,r as a,o as r,c as _,a as e,w as c}from"./app.c45221f8.js";const l={};function s(u,p){const t=a("avatar-group-usage"),o=a("ClientOnly");return r(),_("div",null,[e(o,null,{default:c(()=>[e(t)]),_:1})])}var f=n(l,[["render",s],["__file","avatar-group.html.vue"]]);export{f as default};

@@ -1,0 +1,1 @@
+import{_ as c,r as o,o as _,c as a,a as e,w as l}from"./app.c45221f8.js";const s={};function r(m,u){const n=o("combobox-usage"),t=o("ClientOnly");return _(),a("div",null,[e(t,null,{default:l(()=>[e(n)]),_:1})])}var f=c(s,[["render",r],["__file","combobox.html.vue"]]);export{f as default};

@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-275071a9","path":"/documentation/components/snackbar.html","title":"","lang":"en-US","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1680515740000,"contributors":[{"name":"M\xFCcahit B\xFCy\xFCky\u0131lmaz","email":"mucahit@konya.edu.tr","commits":1}]},"filePathRelative":"documentation/components/snackbar.md"}');export{t as data};

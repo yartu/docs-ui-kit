@@ -1,0 +1,1 @@
+import{_ as t,r as e,o as a,c as r,a as o,w as _}from"./app.c45221f8.js";const l={};function s(i,d){const n=e("accordion-usage"),c=e("ClientOnly");return a(),r("div",null,[o(c,null,{default:_(()=>[o(n)]),_:1})])}var u=t(l,[["render",s],["__file","accordion.html.vue"]]);export{u as default};

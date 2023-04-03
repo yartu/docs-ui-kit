@@ -1,0 +1,1 @@
+import{_ as s,r as e,o as _,c as a,a as t,w as c}from"./app.c45221f8.js";const l={};function r(m,u){const o=e("bottom-sheet-usage"),n=e("ClientOnly");return _(),a("div",null,[t(n,null,{default:c(()=>[t(o)]),_:1})])}var h=s(l,[["render",r],["__file","bottom-sheet.html.vue"]]);export{h as default};

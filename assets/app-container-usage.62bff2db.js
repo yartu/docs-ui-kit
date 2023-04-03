@@ -1,0 +1,1 @@
+import{_ as a,I as e,o as s,c as t}from"./app.c45221f8.js";const r={class:"text-4xl"},n={__name:"app-container-usage",setup(o){return e(!1),e(!1),e(""),e(!1),e(!1),e("#f8fafd"),e("#3663f2"),e("75"),e("primary"),e(null),(p,_)=>(s(),t("h1",r,"App Container"))}};var f=a(n,[["__file","app-container-usage.vue"]]);export{f as default};

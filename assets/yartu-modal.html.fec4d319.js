@@ -1,0 +1,1 @@
+import{_ as n,r as e,o as l,c as r,a as t,w as _}from"./app.c45221f8.js";const c={};function s(u,m){const a=e("yartu-modal-usage"),o=e("ClientOnly");return l(),r("div",null,[t(o,null,{default:_(()=>[t(a)]),_:1})])}var f=n(c,[["render",s],["__file","yartu-modal.html.vue"]]);export{f as default};

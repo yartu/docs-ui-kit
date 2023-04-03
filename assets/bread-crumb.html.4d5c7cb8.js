@@ -1,0 +1,1 @@
+import{_ as a,r as e,o as c,c as o,a as n,w as _}from"./app.c45221f8.js";const l={};function s(m,u){const r=e("bread-crumb-usage"),t=e("ClientOnly");return c(),o("div",null,[n(t,null,{default:_(()=>[n(r)]),_:1})])}var b=a(l,[["render",s],["__file","bread-crumb.html.vue"]]);export{b as default};

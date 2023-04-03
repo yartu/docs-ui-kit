@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-1c52b729","path":"/documentation/components/radio.html","title":"","lang":"en-US","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1680515740000,"contributors":[{"name":"M\xFCcahit B\xFCy\xFCky\u0131lmaz","email":"mucahit@konya.edu.tr","commits":1}]},"filePathRelative":"documentation/components/radio.md"}');export{t as data};

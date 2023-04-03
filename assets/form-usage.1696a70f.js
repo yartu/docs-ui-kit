@@ -1,0 +1,5 @@
+import{_ as f,I as r,r as e,o as g,c as y,a as o,w as l,F as v,e as m,t}from"./app.c45221f8.js";const E=m("Form"),b=m(' <y-form ref="testForm" name="login-form" @yartu-submit="login">'+t(`
+  `)+' <y-input label="E-Mail" placeholder="Enter your e-mail or username"'+t(`
+   `)+`id="login-email" v-model="mail" :rules="['EMAIL']" helper required>`+t(`
+   `)+"<y-input>"+t(`
+ `)+"<y-form> "),h={__name:"form-usage",setup(F){const s=r(null),a=r(""),u=()=>{s.value.validate(),alert("logged in")};return(x,n)=>{const i=e("y-input"),_=e("y-form"),c=e("usage"),p=e("copy-to-clip-board");return g(),y(v,null,[o(c,null,{title:l(()=>[E]),component:l(()=>[o(_,{ref:"testForm",name:"login-form",onYartuSubmit:u},{default:l(()=>[o(i,{label:"E-Mail",placeholder:"Enter your e-mail or username",id:"login-email",modelValue:a.value,"onUpdate:modelValue":n[0]||(n[0]=d=>a.value=d),rules:["EMAIL"],helper:"",required:""},null,8,["modelValue"])]),_:1},512)]),_:1}),o(p,null,{default:l(()=>[b]),_:1})],64)}}};var M=f(h,[["__file","form-usage.vue"]]);export{M as default};
