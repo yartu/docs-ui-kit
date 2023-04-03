@@ -2,7 +2,8 @@
   <usage>
     <template #title>Button</template>
     <template #component>
-      <y-button
+      <YartuButton
+        hover=""
         :disabled="disabled"
         :square="buttonShape == 'square' ? true : false"
         :circle="buttonShape == 'circle' ? true : false"
@@ -24,9 +25,11 @@
         :primary="buttonType == 'primary' ? true : false"
         :secondary="buttonType == 'secondary' ? true : false"
         :tertiary="buttonType == 'tertiary' ? true : false"
+        :error="buttonType == 'error' ? true : false"
+        :success="buttonType == 'succes' ? true : false"
       >
         {{ buttonShape == "circle" || buttonShape == "square" ? "" : "Sample" }}
-      </y-button>
+      </YartuButton>
     </template>
     <template #bottomProps>
       <div class="flex w-1/2 flex-col gap-3">
@@ -53,6 +56,18 @@
             inputValue="tertiary"
             label="Tertiary"
           ></y-radio>
+          <y-radio
+            class="gap-2 text-sm"
+            v-model="buttonType"
+            inputValue="error"
+            label="Error"
+          ></y-radio>
+          <y-radio
+            class="gap-2 text-sm"
+            v-model="buttonType"
+            inputValue="succes"
+            label="Succes"
+          ></y-radio>
         </div>
       </div>
       <div class="flex w-1/2 flex-col gap-3">
@@ -78,6 +93,32 @@
             v-model="buttonShape"
             inputValue="circle"
             label="Circle"
+          ></y-radio>
+        </div>
+      </div>
+      <div v-if="loading" class="flex w-1/2 flex-col gap-3">
+        <p class="font-semibold">Spinner Color</p>
+        <div class="flex flex-col gap-1">
+          <y-radio
+            class="gap-2 text-sm"
+            checked
+            v-model="spinnerColor"
+            inputValue="blue"
+            label="Blue"
+          ></y-radio>
+
+          <y-radio
+            class="gap-2 text-sm"
+            v-model="spinnerColor"
+            inputValue="red"
+            label="Red"
+          ></y-radio>
+
+          <y-radio
+            class="gap-2 text-sm"
+            v-model="spinnerColor"
+            inputValue="green"
+            label="Green"
           ></y-radio>
         </div>
       </div>
@@ -152,11 +193,17 @@
     }}{{ icon == "" ? "" : '\n icon="' + icon + '"'
     }}{{
       sizeVal == "25"
-        ? '\n size="xs"'
+        ? ' size="xs"'
         : sizeVal == "50"
-        ? '\n size="sm"'
+        ? ' size="sm"'
         : sizeVal == "100"
-        ? '\n size="lg"'
+        ? ' size="lg"'
+        : ""
+    }}{{
+      spinnerColor == "green"
+        ? ' spinnerColor="green"'
+        : spinnerColor == "red"
+        ? ' spinnerColor="red"'
         : ""
     }}{{ disabled ? "\n disabled" : "" }}{{ active ? "\n active" : ""
     }}{{ app ? "\n app" : "" }}{{ loading ? "\n loading" : "" }}&gt;{{
@@ -205,6 +252,11 @@
           <td>false</td>
         </tr>
         <tr>
+          <td>error</td>
+          <td>Boolean</td>
+          <td>false</td>
+        </tr>
+        <tr>
           <td>loading</td>
           <td>Boolean</td>
           <td>false</td>
@@ -239,6 +291,11 @@
           <td>String</td>
           <td>'#3663f2'</td>
         </tr>
+        <tr>
+          <td>iconColor</td>
+          <td>String</td>
+          <td>''</td>
+        </tr>
       </tbody>
     </table>
   </div>
@@ -246,6 +303,7 @@
 
 <script setup>
 import { ref, onMounted } from "vue";
+import YartuButton from "./YartuButton.vue";
 
 const disabled = ref(false),
   loading = ref(false),

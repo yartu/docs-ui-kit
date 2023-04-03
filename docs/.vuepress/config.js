@@ -7,11 +7,24 @@ const {
 module.exports = {
   title: "Yartu UI Kit",
   description: "Powered by Tailwind & Vue 3",
-  base: 'docs-ui-kit',
+  base: "docs-ui-kit",
   head: [
-    ["link", { rel: "icon", sizes: "32x32", href: "/docs-ui-kit/images/logos/logo.png" }],
-    ["link", { rel: "stylesheet", type: "text/css", href: "/docs-ui-kit/input.css" }],
-    ["link", { rel: "stylesheet", type: "text/css", href: "/docs-ui-kit/reset.css" }],
+    [
+      "link",
+      {
+        rel: "icon",
+        sizes: "32x32",
+        href: "/docs-ui-kit/images/logos/logo.png",
+      },
+    ],
+    [
+      "link",
+      { rel: "stylesheet", type: "text/css", href: "/docs-ui-kit/input.css" },
+    ],
+    [
+      "link",
+      { rel: "stylesheet", type: "text/css", href: "/docs-ui-kit/reset.css" },
+    ],
     ["script", { src: "https://cdn.tailwindcss.com" }],
     [
       "link",
@@ -90,7 +103,7 @@ module.exports = {
               text: "Accordion",
               link: "../components/accordion.md",
             },
-            
+
             {
               text: "Avatar Group",
               link: "../components/avatar-group.md",
@@ -104,6 +117,10 @@ module.exports = {
               link: "../components/badge.md",
             },
             {
+              text: "Bottom Sheet",
+              link: "../components/bottom-sheet.md",
+            },
+            {
               text: "Bread Crumb",
               link: "../components/bread-crumb.md",
             },
@@ -112,8 +129,20 @@ module.exports = {
               link: "../components/button.md",
             },
             {
+              text: "Button Group",
+              link: "../components/button-group.md",
+            },
+            // {
+            //   text: "Calendar",
+            //   link: "../components/calendar.md",
+            // },
+            {
               text: "Card",
               link: "../components/card.md",
+            },
+            {
+              text: "Carousel",
+              link: "../components/carousel.md",
             },
             {
               text: "Checkbox",
@@ -122,6 +151,10 @@ module.exports = {
             {
               text: "Chip",
               link: "../components/chip.md",
+            },
+            {
+              text: "Combo Box",
+              link: "../components/combobox.md",
             },
             {
               text: "Collapsible Panel",
@@ -134,6 +167,18 @@ module.exports = {
             {
               text: "Curtain Menu",
               link: "../components/curtain-menu.md",
+            },
+            {
+              text: "Data Table",
+              link: "../components/data-table.md",
+            },
+            // {
+            //   text: "Date Time Picker",
+            //   link: "../components/date-time-picker.md",
+            // },
+            {
+              text: "Dialog",
+              link: "../components/dialog.md",
             },
             {
               text: "Dropdown",
@@ -156,9 +201,17 @@ module.exports = {
               link: "../components/input.md",
             },
             {
+              text: "Listbox",
+              link: "../components/list.md",
+            },
+            {
               text: "Loading",
               link: "../components/loading.md",
             },
+            // {
+            //   text: "Mention",
+            //   link: "../components/mention.md",
+            // },
             {
               text: "Modal",
               link: "../components/modal.md",
@@ -187,6 +240,10 @@ module.exports = {
               text: "Radio Button",
               link: "../components/radio.md",
             },
+            // {
+            //   text: "Select",
+            //   link: "../components/select.md",
+            // },
             {
               text: "Shaped Card",
               link: "../components/shaped-card.md",
@@ -194,6 +251,10 @@ module.exports = {
             {
               text: "Simple Table",
               link: "../components/simple-table.md",
+            },
+            {
+              text: "Small Card",
+              link: "../components/small-card.md",
             },
             {
               text: "Snackbar",
@@ -204,13 +265,17 @@ module.exports = {
               link: "../components/switch.md",
             },
             {
-              text: "Tag",
-              link: "../components/tag.md",
-            },
-            {
               text: "Textarea",
               link: "../components/textarea.md",
             },
+            {
+              text: "Timeline",
+              link: "../components/timeline.md",
+            },
+            // {
+            //   text: "Time Picker",
+            //   link: "../components/timePicker.md",
+            // },
             {
               text: "Toast",
               link: "../components/toast.md",
@@ -218,6 +283,18 @@ module.exports = {
             {
               text: "Tooltip",
               link: "../components/tooltip.md",
+            },
+            {
+              text: "Tree",
+              link: "../components/tree.md",
+            },
+            {
+              text: "Yartu Modal",
+              link: "../components/yartu-modal.md",
+            },
+            {
+              text: "Yartu Notify",
+              link: "../components/yartu-notify.md",
             },
           ],
         },

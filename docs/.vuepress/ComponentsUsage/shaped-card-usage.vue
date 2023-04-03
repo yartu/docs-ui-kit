@@ -3,52 +3,72 @@
     <template #title>Shaped Card</template>
     <template #component>
       <y-shaped-card
-      :prefixBtn="prefixBtn"
-      :postfixBtn="postfixBtn"
-      :shape="shape"
+        :prefixBtn="prefixBtn"
+        :postfixBtn="postfixBtn"
+        :shape="shape"
+        :selected="selected"
       >
-      <template #content>Content Area</template>
-      <template #prefixBtn><y-button tertiary icon="yi yi-delete" square></y-button></template>
-      <template #postfixBtn><y-checkbox></y-checkbox></template>
-      <template #shape>Shape</template>
-      <template #text>Title</template>
+        <template #content>Content Area</template>
+        <template #prefixBtn
+          ><y-button tertiary icon="yi yi-delete" square></y-button
+        ></template>
+        <template #postfixBtn><y-checkbox></y-checkbox></template>
+        <template #shape>Shape</template>
+        <template #text>Title</template>
       </y-shaped-card>
-      </template>
-      <template #rightProps>
-        <div class="flex flex-col gap-1">
-          <y-checkbox
-            @change="setShape"
-            inputValue="shape"
-            label="Shape"
-            class="gap-2"
-          ></y-checkbox>
-          <y-checkbox
-            @change="setPostfixBtn"
-            inputValue="postfixBtn"
-            label="Postfix Button"
-            class="gap-2"
-          ></y-checkbox>
-          <y-checkbox
-            @change="setPrefixBtn"
-            inputValue="prefixBtn"
-            label="Prefix Button"
-            class="gap-2"
-          ></y-checkbox>
+    </template>
+    <template #rightProps>
+      <div class="flex flex-col gap-1">
+        <y-checkbox
+          @change="setShape"
+          inputValue="shape"
+          label="Shape"
+          class="gap-2"
+        ></y-checkbox>
+        <y-checkbox
+          @change="setPostfixBtn"
+          inputValue="postfixBtn"
+          label="Postfix Button"
+          class="gap-2"
+        ></y-checkbox>
+        <y-checkbox
+          @change="setPrefixBtn"
+          inputValue="prefixBtn"
+          label="Prefix Button"
+          class="gap-2"
+        ></y-checkbox>
+        <y-checkbox
+          @change="setSelected"
+          inputValue="selected"
+          label="Selected"
+          class="gap-2"
+        ></y-checkbox>
       </div>
-      </template>
+    </template>
   </usage>
   <copy-to-clip-board>
-    &lt;y-shaped-card{{
-    shape ?'':'\n :shape="false"'}}{{
-    postfixBtn ?'\n postfixBtn':''}}{{
-    prefixBtn ?'\n prefixBtn':''}}&gt;
-      {{'\n  '}}&lt;template #content&gt;{{'\n   '}}/.../{{'\n  '}}&lt;/template&gt;
-     {{postfixBtn ?'\n  &lt;template #postfixBtn&gt;\n   /.../\n  &lt;/template&gt;':''}} 
-     {{prefixBtn ?'\n  &lt;template #prefixBtn&gt;\n   /.../\n  &lt;/template&gt;':''}} 
-     {{shape ?'\n   &lt;template #shape&gt;\n   Shape\n  &lt;/template&gt;':''}}
-      {{'\n  '}}&lt;template #text&gt;{{'\n   '}}Title{{'\n  '}}&lt;/template&gt;
-      
-     {{'\n '}}&lt;/y-shaped-card&gt;
+    &lt;y-shaped-card{{ shape ? "" : '\n :shape="false"'
+    }}{{ selected ? "\n selected" : "" }}{{ postfixBtn ? "\n postfixBtn" : ""
+    }}{{ prefixBtn ? "\n prefixBtn" : "" }}&gt; {{ "\n  " }}&lt;template
+    #content&gt;{{ "\n   " }}/.../{{ "\n  " }}&lt;/template&gt;
+    {{
+      postfixBtn
+        ? "\n  &lt;template #postfixBtn&gt;\n   /.../\n  &lt;/template&gt;"
+        : ""
+    }}
+    {{
+      prefixBtn
+        ? "\n  &lt;template #prefixBtn&gt;\n   /.../\n  &lt;/template&gt;"
+        : ""
+    }}
+    {{
+      shape ? "\n   &lt;template #shape&gt;\n   Shape\n  &lt;/template&gt;" : ""
+    }}
+    {{ "\n  " }}&lt;template #text&gt;{{ "\n   " }}Title{{
+      "\n  "
+    }}&lt;/template&gt;
+
+    {{ "\n " }}&lt;/y-shaped-card&gt;
   </copy-to-clip-board>
   <div class="flex flex-col mt-7 gap-1">
     <p class="font-semibold text-xl">Component Props</p>
@@ -76,6 +96,11 @@
           <td>Boolean</td>
           <td>true</td>
         </tr>
+        <tr>
+          <td>selected</td>
+          <td>Boolean</td>
+          <td>false</td>
+        </tr>
       </tbody>
     </table>
   </div>
@@ -86,8 +111,8 @@ import { ref } from "vue";
 
 const shape = ref(true),
   prefixBtn = ref(false),
-  postfixBtn = ref(false);
-
+  postfixBtn = ref(false),
+  selected = ref(false);
 
 function setShape() {
   if (shape.value == false) shape.value = true;
@@ -101,5 +126,8 @@ function setPostfixBtn() {
   if (postfixBtn.value == false) postfixBtn.value = true;
   else postfixBtn.value = false;
 }
-
+function setSelected() {
+  if (selected.value == false) selected.value = true;
+  else selected.value = false;
+}
 </script>

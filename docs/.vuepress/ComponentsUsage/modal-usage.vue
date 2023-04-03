@@ -2,17 +2,25 @@
   <usage>
     <template #title>Modal</template>
     <template #component>
-      <y-button primary @click="toggleModal()" size="lg">Open Modal</y-button>
-      <y-modal v-if="openModal"  @close="toggleModal()">
-        <div class=" p-6 w-full ">
-            Some content here
-        </div> 
-      </y-modal></template>
+      <YartuButton primary @click="openModal = true" size="lg"
+        >Open Modal</YartuButton
+      >
+      <y-modal
+        :modelValue="openModal"
+        @update:modalValue="openModal = $event"
+        @closed="openModal = false"
+      >
+        <div class="w-44 h-44 flex flex-col justify-center items-center">
+          <span class="font-bold text-blue-800">Sample Modal</span>
+        </div>
+      </y-modal></template
+    >
   </usage>
   <copy-to-clip-board>
-    &lt;y-modal v-if="openModal"&gt;{{
-    '\n  '}}&lt;div class="p-6 w-full"&gt;{{'\n   '}}
-    Some content here{{'\n  '}}&lt;/div&gt;{{'\n'}}
+    &lt;y-modal v-if="openModal"&gt;{{ "\n  " }}&lt;div class="p-6 w-full"&gt;{{
+      "\n   "
+    }}
+    content {{ "\n  " }}&lt;/div&gt;{{ "\n" }}
     &lt;/y-modal&gt;
   </copy-to-clip-board>
 
@@ -39,11 +47,11 @@
 
 <script setup>
 import { ref } from "vue";
-
+import YartuButton from "./YartuButton.vue";
 const openModal = ref(false);
 
-function toggleModal() {
-  if (openModal.value == false) openModal.value = true;
-  else openModal.value = false;
-}
+// function toggleModal() {
+//   if (openModal.value == false) openModal.value = true;
+//   else openModal.value = false;
+// }
 </script>

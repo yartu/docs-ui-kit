@@ -3,8 +3,8 @@
     <template #title>Badge</template>
     <template #component
       ><y-badge
-        :size="sizeVal == '20' ? 'base' : 'sm'"
-        :border="border"
+        :size="sizeVal == '30' ? 'base' : sizeVal == '20' ? 'sm' : 'xs'"
+        :outline="outline"
         :ping="ping"
         :bottom="bottom"
         :left="left"
@@ -12,7 +12,7 @@
         :color="color"
         :bgColor="bgColor"
         :borderColor="borderColor"
-        value="+1"
+        value="."
         ><y-avatar label="UK"></y-avatar></y-badge
     ></template>
     <template #bottomProps>
@@ -30,13 +30,13 @@
             class="gap-2 text-sm"
             v-model="color"
             inputValue="#cccccc"
-            label="clr1"
+            label="Grey"
           ></y-radio>
           <y-radio
             class="gap-2 text-sm"
             v-model="color"
             inputValue="#eeeeee"
-            label="clr2"
+            label="Light Grey"
           ></y-radio>
         </div>
       </div>
@@ -55,19 +55,19 @@
             class="gap-2 text-sm"
             v-model="bgColor"
             inputValue="#bbbbbb"
-            label="clr3"
+            label="Light Grey"
           ></y-radio>
 
           <y-radio
             class="gap-2 text-sm"
             v-model="bgColor"
             inputValue="#aaaaaa"
-            label="clr4"
+            label="Grey"
           ></y-radio>
         </div>
       </div>
-      <div class="flex w-1/3 flex-col gap-3">
-        <p class="font-semibold">Border Color</p>
+      <div v-if="outline" class="flex w-1/3 flex-col gap-3">
+        <p class="font-semibold">Outline Color</p>
         <div class="flex flex-col gap-1">
           <y-radio
             class="gap-2 text-sm"
@@ -81,14 +81,14 @@
             class="gap-2 text-sm"
             v-model="borderColor"
             inputValue="#000000"
-            label="clr5"
+            label="Black"
           ></y-radio>
 
           <y-radio
             class="gap-2 text-sm"
             v-model="borderColor"
             inputValue="#dddddd"
-            label="clr6"
+            label="Grey"
           ></y-radio>
         </div>
       </div>
@@ -96,9 +96,9 @@
     <template #rightProps>
       <div class="flex flex-col gap-1">
         <y-checkbox
-          @change="setBorder"
-          inputValue="border"
-          label="Border"
+          @change="setOutline"
+          inputValue="outline"
+          label="Outline"
           class="gap-2"
         ></y-checkbox>
         <y-checkbox
@@ -124,18 +124,19 @@
         <y-checkbox
           @change="setVisible"
           inputValue="visible"
+          checked
           label="Visible"
           class="gap-2"
         ></y-checkbox>
       </div>
       <div class="flex flex-col gap-2">
-        <p class="font-semibold">Button Size</p>
+        <p class="font-semibold">Badge Size</p>
         <div class="flex flex-col">
           <div class="slidecontainer">
             <input
               type="range"
               min="10"
-              max="20"
+              max="30"
               step="10"
               v-model="sizeVal"
               class="slider"
@@ -157,8 +158,9 @@
         : '\n borderColor="' + borderColor + '"'
     }}{{ bottom ? "\n bottom" : "" }}{{ left ? "\n left" : ""
     }}{{ ping ? "\n ping" : "" }}{{ visible ? "" : "\n visible"
-    }}{{ sizeVal == "10" ? '\n size="sm"' : "" }}&nbsp;&gt;Sample
-    Badge&lt;/y-badge&gt;
+    }}{{
+      sizeVal == "10" ? '\n size="xs"' : sizeVal == "20" ? '\n size="sm"' : ""
+    }}&nbsp;&gt;Sample Badge&lt;/y-badge&gt;
   </copy-to-clip-board>
   <div class="flex flex-col mt-7 gap-1">
     <p class="font-semibold text-xl">Component Props</p>
@@ -182,7 +184,7 @@
           <td>''</td>
         </tr>
         <tr>
-          <td>border</td>
+          <td>outline</td>
           <td>Boolean</td>
           <td>false</td>
         </tr>
@@ -219,7 +221,7 @@
         <tr>
           <td>visible</td>
           <td>Boolean</td>
-          <td>false</td>
+          <td>true</td>
         </tr>
         <tr>
           <td>relative</td>
@@ -234,20 +236,20 @@
 <script setup>
 import { ref, onMounted } from "vue";
 
-const border = ref(false),
+const outline = ref(false),
   bottom = ref(false),
   left = ref(false),
   ping = ref(false),
   color = ref("#ffffff"),
   visible = ref(true);
 
-const sizeVal = ref("20");
+const sizeVal = ref("30");
 const bgColor = ref("#49ab5e");
 const borderColor = ref("#e5ebf5ff");
 
-function setBorder() {
-  if (border.value == false) border.value = true;
-  else border.value = false;
+function setOutline() {
+  if (outline.value == false) outline.value = true;
+  else outline.value = false;
 }
 function setBottom() {
   if (bottom.value == false) bottom.value = true;

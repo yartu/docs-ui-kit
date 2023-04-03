@@ -2,17 +2,83 @@
   <usage>
     <template #title>Tooltip</template>
     <template #component>
-      <y-tooltip top right>
+      <y-tooltip
+        :top="vertical == 'top' ? true : false"
+        :right="horizontal == 'right' ? true : false"
+        :left="horizontal == 'left' ? true : false"
+        :bottom="vertical == 'bottom' ? true : false"
+        :center="horizontal == 'center' ? true : false"
+      >
         <y-button primary>Open Tooltip</y-button>
         <template #tooltip>Hello from Tooltip!</template>
       </y-tooltip>
     </template>
+    <template #rightProps>
+      <div class="flex flex-col gap-2">
+        <p class="font-semibold">Horizontal</p>
+        <div class="flex flex-col gap-1">
+          <y-radio
+            class="gap-2 text-sm"
+            checked
+            v-model="horizontal"
+            inputValue="right"
+            label="Right "
+          ></y-radio>
+          <y-radio
+            class="gap-2 text-sm"
+            v-model="horizontal"
+            inputValue="left"
+            label="Left"
+          ></y-radio>
+          <y-radio
+            class="gap-2 text-sm"
+            v-model="horizontal"
+            inputValue="center"
+            label="Center"
+          ></y-radio>
+
+          <p class="font-semibold">Vertical</p>
+          <y-radio
+            class="gap-2 text-sm"
+            v-model="vertical"
+            inputValue="bottom"
+            label="Bottom"
+          ></y-radio>
+          <y-radio
+            class="gap-2 text-sm"
+            v-model="vertical"
+            inputValue="top"
+            label="Top"
+          ></y-radio>
+        </div>
+      </div>
+    </template>
   </usage>
   <copy-to-clip-board>
-    &lt;y-tooltip top right&gt;
-      {{'\n  '}} &lt;y-button primary&gt;Open Tooltip&lt;/y-button&gt;
-      {{'\n   '}}&lt;template #tooltip&gt;Hello from Tooltip!&lt;/template&gt;
-      {{'\n '}}&lt;/y-tooltip&gt;
+    &lt;y-tooltip{{
+      vertical == "bottom"
+        ? " bottom"
+        : "" + vertical == "top"
+        ? " top"
+        : "" + right == true
+        ? "right"
+        : "" + left == true
+        ? " left"
+        : "" + center == true
+        ? " center "
+        : ""
+    }}
+    {{
+      horizontal == "right"
+        ? " right"
+        : "" + horizontal == "left"
+        ? " left"
+        : "" + horizontal == "center"
+        ? " center "
+        : ""
+    }}&gt; {{ "\n  " }} &lt;y-button primary&gt;Open Tooltip&lt;/y-button&gt;
+    {{ "\n   " }}&lt;template #tooltip&gt;Hello from Tooltip!&lt;/template&gt;
+    {{ "\n " }}&lt;/y-tooltip&gt;
   </copy-to-clip-board>
   <div class="flex flex-col mt-7 gap-1">
     <p class="font-semibold text-xl">Component Props</p>
@@ -63,10 +129,17 @@
 <script setup>
 import { ref } from "vue";
 
-const showModal = ref(false);
+const center = ref(false),
+  bottom = ref(false),
+  top = ref(false),
+  left = ref(false),
+  right = ref(false);
 
-function getModal() {
-  if (showModal.value == false) showModal.value = true;
-  else showModal.value = false;
+const vertical = ref("");
+const horizontal = ref("");
+
+function setprop(prop) {
+  if (prop.value == false) prop.value = true;
+  else prop.value = false;
 }
 </script>
