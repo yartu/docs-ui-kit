@@ -21,18 +21,13 @@
         <y-navigation-drawer-item>Contact</y-navigation-drawer-item>
       </y-navigation-drawer>
       <div class="w-full h-full flex items-center justify-center">
-        <y-button tertiary @click="openNavigation">Open Navigation</y-button>
+        <YartuButton tertiary @click="openNavigation"
+          >Open Navigation</YartuButton
+        >
       </div>
     </template>
     <template #rightProps>
       <div class="flex flex-col gap-1">
-        <y-radio
-          v-model="position"
-          checked
-          inputValue="relative"
-          label="Relative"
-          class="gap-2"
-        ></y-radio>
         <y-radio
           v-model="position"
           inputValue="fixed"
@@ -40,6 +35,7 @@
           class="gap-2"
         ></y-radio>
         <y-radio
+          checked
           v-model="position"
           inputValue="absolute"
           label="Absolute"
@@ -183,6 +179,7 @@
 
 <script setup>
 import { ref } from "vue";
+import YartuButton from "./YartuButton.vue";
 
 const overlay = ref(false),
   topGap = ref("0px"),
@@ -193,7 +190,7 @@ const overlay = ref(false),
   right = ref(false),
   rounded = ref(false),
   open = ref(false),
-  position = ref("relative");
+  position = ref("absolute");
 
 function openNavigation() {
   if (open.value == false) open.value = true;

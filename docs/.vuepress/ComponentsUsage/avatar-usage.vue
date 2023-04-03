@@ -1,5 +1,4 @@
 <template>
-
   <usage>
     <template #title>Avatar</template>
     <template #component>
@@ -29,18 +28,7 @@
     </template>
     <template #rightProps>
       <div class="flex flex-col gap-2">
-        <p class="font-semibold">Button Shape</p>
-        <div class="flex flex-col gap-1">
-          <y-radio
-            checked
-            v-model="buttonShape"
-            inputValue=""
-            label="Circle"
-          ></y-radio>
-        </div>
-      </div>
-      <div class="flex flex-col gap-2">
-        <p class="font-semibold">Button Size</p>
+        <p class="font-semibold">Avatar Size</p>
         <div class="flex flex-col">
           <div class="slidecontainer">
             <input
@@ -60,6 +48,7 @@
           @change="setBorder"
           inputValue="border"
           label="Border"
+          shape=""
           class="gap-2"
         ></y-checkbox>
       </div>
@@ -84,9 +73,9 @@
         : sizeVal == "80"
         ? '\n size="4xl"'
         : ""
-    }}{{'\n'}} image="/images/avatar.jpeg"{{ border ? "\n border" : "" }}&gt;{{
-      label == null ? "" : '\nlabel="' + label + '"'
-    }}&lt;/y-avatar&gt;
+    }}{{ "\n" }} image="/images/avatar.jpeg"{{
+      border ? "\n border" : ""
+    }}&gt;{{ label == null ? "" : '\nlabel="' + label + '"' }}&lt;/y-avatar&gt;
   </copy-to-clip-board>
   <div class="flex flex-col mt-7 gap-1">
     <p class="font-semibold text-xl">Component Props</p>

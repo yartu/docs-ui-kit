@@ -2,15 +2,20 @@
   <usage>
     <template #title>Checkbox</template>
     <template #component>
-      <y-checkbox
+      <yartuCheckboxVue
+        :indeterminate="boxType == 'indeterminate' ? true : false"
+        :error="boxType == 'error' ? true : false"
+        :primary="boxType == 'primary' ? true : false"
         inputValue="checkConfirm"
         label="Check it!"
         id="checkbox"
         :disabled="disabled"
         :bg="bg"
         :checked="checked"
+        outline-color="#e6e6e6"
         class="gap-2"
-      ></y-checkbox>
+        :size="sizeVal == '100' ? 'lg' : 'md'"
+      ></yartuCheckboxVue>
     </template>
     <template #rightProps>
       <div class="flex flex-col gap-1">
@@ -30,15 +35,88 @@
         <y-checkbox
           @change="setBg"
           inputValue="bg"
-          label="Background"
+          label="Backround"
           class="gap-2"
         ></y-checkbox>
+
+        <div class="flex flex-col gap-2">
+          <p class="font-semibold">Box Size</p>
+          <div class="flex flex-col">
+            <div class="slidecontainer">
+              <input
+                type="range"
+                min="0"
+                max="100"
+                step="100"
+                v-model="sizeVal"
+                class="slider"
+                id="myRange"
+              />
+            </div>
+          </div>
+        </div>
       </div>
+    </template>
+    <template #bottomProps>
+      <div class="flex w-1/2 flex-col gap-3">
+        <p class="font-semibold">Box Types</p>
+        <div class="flex flex-col gap-1">
+          <y-radio
+            class="gap-2 text-sm"
+            v-model="boxType"
+            inputValue="primary"
+            label="Primary"
+            checked
+          ></y-radio>
+
+          <y-radio
+            class="gap-2 text-sm"
+            v-model="boxType"
+            inputValue="error"
+            label="Error"
+          ></y-radio>
+
+          <y-radio
+            class="gap-2 text-sm"
+            v-model="boxType"
+            inputValue="indeterminate"
+            label="Indedterminate"
+          ></y-radio>
+        </div>
+      </div>
+      <!-- <div class="flex w-1/2 flex-col gap-3">
+        <p class="font-semibold">Check Color</p>
+        <div class="flex flex-col gap-1">
+          <y-radio
+            class="gap-2 text-sm"
+            checked
+            v-model="color"
+            inputValue="BLUE"
+            label="Blue"
+          ></y-radio>
+
+          <y-radio
+            class="gap-2 text-sm"
+            v-model="color"
+            inputValue="RED"
+            label="Red"
+          ></y-radio>
+
+          <y-radio
+            class="gap-2 text-sm"
+            v-model="color"
+            inputValue="#124424"
+            label="Green"
+          ></y-radio>
+        </div>
+      </div> -->
     </template>
   </usage>
   <copy-to-clip-board>
-    &lt;y-checkbox{{ "\n" }} id="checkbox" inputValue="checkConfirm"{{ "\n" }} label="Check
-    it!"{{ "\n" }} class="gap-2" {{ disabled ? "\n disabled" : ""
+    &lt;y-checkbox{{ "\n" }} id="checkbox" inputValue="checkConfirm"{{
+      "\n"
+    }}
+    label="Check it!"{{ "\n" }} class="gap-2" {{ disabled ? "\n disabled" : ""
     }}{{ checked ? "\n checked" : "" }}{{ bg ? "\n bg" : "" }}&nbsp;&gt;Check
     it!&lt;/y-checkbox&gt;
   </copy-to-clip-board>
@@ -69,9 +147,19 @@
           <td>''</td>
         </tr>
         <tr>
-          <td>checked</td>
-          <td>Boolean</td>
-          <td>false</td>
+          <td>size</td>
+          <td>string</td>
+          <td>md</td>
+        </tr>
+        <tr>
+          <td>modelValue</td>
+          <td>{}</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>inputValue</td>
+          <td>String</td>
+          <td>This prop is required !</td>
         </tr>
         <tr>
           <td>disabled</td>
@@ -79,9 +167,24 @@
           <td>false</td>
         </tr>
         <tr>
-          <td>inputValue</td>
+          <td>outlineColor</td>
           <td>String</td>
-          <td>This prop is required !</td>
+          <td>""</td>
+        </tr>
+        <tr>
+          <td>indeterminate</td>
+          <td>Boolean</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>Color</td>
+          <td>string</td>
+          <td>""</td>
+        </tr>
+        <tr>
+          <td>checked</td>
+          <td>boolean</td>
+          <td>false</td>
         </tr>
       </tbody>
     </table>
@@ -90,10 +193,15 @@
 
 <script setup>
 import { ref } from "vue";
+import yartuCheckboxVue from "./yartuCheckbox.vue";
 
 const disabled = ref(false),
   checked = ref(false),
-  bg = ref(false);
+  bg = ref(false),
+  indeterminate = ref(false),
+  sizeVal = ref(0),
+  boxType = ref(""),
+  color = ref("blue");
 
 function setDisabled() {
   if (disabled.value == false) disabled.value = true;
@@ -106,5 +214,9 @@ function setChecked() {
 function setBg() {
   if (bg.value == false) bg.value = true;
   else bg.value = false;
+}
+function setIndeterminate() {
+  if (indeterminate.value == false) indeterminate.value = true;
+  else indeterminate.value = false;
 }
 </script>

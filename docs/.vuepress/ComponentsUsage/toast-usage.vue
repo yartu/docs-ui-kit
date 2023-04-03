@@ -62,41 +62,10 @@
           <td>false</td>
         </tr>
         <tr>
-          <td>maxToasts</td>
-          <td>Number, Boolean</td>
-          <td>false</td>
-        </tr>
-        <tr>
           <td>duration</td>
           <td>Number, Boolean</td>
           <td>3000</td>
         </tr>
-        <tr>
-          <td>dismissible</td>
-          <td>Boolean</td>
-          <td>true</td>
-        </tr>
-        <tr>
-          <td>queue</td>
-          <td>Boolean</td>
-          <td>false</td>
-        </tr>
-        <tr>
-          <td>pauseOnHover</td>
-          <td>Boolean</td>
-          <td>true</td>
-        </tr>
-        <tr>
-          <td>onClose</td>
-          <td>Function</td>
-          <td>() => {}</td>
-        </tr>
-        <tr>
-          <td>onClick</td>
-          <td>Function</td>
-          <td>() => {}</td>
-        </tr>
-        
       </tbody>
     </table>
   </div>

@@ -4,6 +4,7 @@
     <template #component>
       <div class="w-2/3">
         <y-progress-bar
+          :transparent="transparent"
           :progress="progress"
           :height="height"
           :default="type == 'default' ? true : false"
@@ -25,12 +26,12 @@
             inputValue="default"
             label="Default"
           ></y-radio>
-          <y-radio
+          <!-- <y-radio
             class="gap-2 text-sm"
             v-model="type"
             inputValue="success"
             label="Success"
-          ></y-radio>
+          ></y-radio> -->
           <y-radio
             class="gap-2 text-sm"
             v-model="type"
@@ -68,6 +69,12 @@
             label="Move"
           ></y-radio>
         </div>
+        <y-checkbox
+          @change="setTransparent"
+          inputValue="transparent"
+          label="Transparent"
+          class="gap-2 pt-6"
+        ></y-checkbox>
       </div>
     </template>
     <template #bottomProps>
@@ -93,6 +100,7 @@
           <div class="flex flex-col">
             <div class="slidecontainer">
               <input
+                :disabled="indeterminate != 'none'"
                 type="range"
                 min="0"
                 max="100"
@@ -110,10 +118,11 @@
 
   <copy-to-clip-board>
     &lt;y-progress-bar {{ type
-    }}{{ indeterminate == "none" ? "" : '\n indeterminate="' + indeterminate + '"'
-    }}{{indeterminate == "none" ?'\n progress="' + progress + '"' : ""
-    }}{{'\n height="' + height + '"'
-    }}&gt;{{ "\n " }}&lt;/y-progress-bar&gt;
+    }}{{ transparent == false ? "" : "\n transparent"
+    }}{{
+      indeterminate == "none" ? "" : '\n indeterminate="' + indeterminate + '"'
+    }}{{ indeterminate == "none" ? '\n progress="' + progress + '"' : ""
+    }}{{ '\n height="' + height + '"' }}&gt;{{ "\n " }}&lt;/y-progress-bar&gt;
   </copy-to-clip-board>
 
   <div class="flex flex-col mt-7 gap-1">
@@ -173,13 +182,21 @@ import { ref } from "vue";
 const type = ref("default"),
   height = ref(4),
   progress = ref(30),
-  indeterminate = ref("none");
+  indeterminate = ref("none"),
+  transparent = ref(false);
 
 function setIndeterminate() {
   if (indeterminate.value == false) {
     indeterminate.value = true;
   } else {
     indeterminate.value = false;
+  }
+}
+function setTransparent() {
+  if (transparent.value == false) {
+    transparent.value = true;
+  } else {
+    transparent.value = false;
   }
 }
 </script>

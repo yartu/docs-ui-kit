@@ -4,6 +4,7 @@
     <template #component>
       <div class="flex flex-col gap-2">
         <y-radio
+          :disabled="disabled"
           checked
           label="Choose one"
           id="option-1"
@@ -15,6 +16,7 @@
           :borderColor="borderColor"
         ></y-radio>
         <y-radio
+          :disabled="disabled"
           label="Choose two"
           class="gap-1"
           id="option-2"
@@ -26,12 +28,32 @@
         ></y-radio>
       </div>
     </template>
+    <template #rightProps>
+      <div class="flex flex-col gap-1">
+        <p class="font-bold font-lg">State</p>
+        <y-checkbox
+          v-model="disabled"
+          inputValue="disavled"
+          label="Disabled"
+          class="gap-2"
+        ></y-checkbox>
+      </div>
+    </template>
   </usage>
 
   <copy-to-clip-board>
-    &lt;y-radio id="option-1" label="Choose one" class="gap-1"
-    v-model="choice1"&gt;&lt;/y-radio&gt;{{ "\n" }} &lt;y-radio id="option-2" label="Choose
-    one" class="gap-1" v-model="choice2"&gt;&lt;/y-radio&gt;{{ "\n" }}
+    &lt;y-radio id="option-1"{{
+      disabled == true ? " disabled" : ""
+    }}
+    label="Choose one" class="gap-1" v-model="choice1"&gt;&lt;/y-radio&gt;{{
+      "\n"
+    }}
+    &lt;y-radio id="option-2"{{
+      disabled == true ? " disabled" : ""
+    }}
+    label="Choose one" class="gap-1" v-model="choice2"&gt;&lt;/y-radio&gt;{{
+      "\n"
+    }}
   </copy-to-clip-board>
   <div class="flex flex-col mt-7 gap-1">
     <p class="font-semibold text-xl">Component Props</p>
@@ -94,8 +116,8 @@ import { ref } from "vue";
 
 const bgColor = ref("#ffffff"),
   color = ref("#ffffff"),
-  borderColor = ref("#e5ebf5ff");
+  borderColor = ref("#e5ebf5ff"),
+  disabled = ref(false);
 
 const choice = ref(null);
-
 </script>

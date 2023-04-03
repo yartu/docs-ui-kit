@@ -3,19 +3,58 @@
     <template #title>Textarea</template>
     <template #component>
       <y-text-area
-       :id="1" 
-       v-model="text" 
-       title="Text Area"
-       ><template #helper>Write something</template></y-text-area>
+        :id="1"
+        v-model="text"
+        title="Text Area"
+        :placeholder="placeholder == true ? 'Type here..' : ''"
+        :disabled="disable"
+        :readonly="readOnly"
+        :helper="helper"
+        ><template #helper v-if="helper">Write something</template></y-text-area
+      >
+    </template>
+    <template #rightProps>
+      <div class="flex flex-col gap-1">
+        <y-checkbox
+          @change="disable == true ? (disable = false) : (disable = true)"
+          inputValue="disable"
+          label="Disabled"
+          class="gap-2"
+        ></y-checkbox>
+        <y-checkbox
+          @change="readOnly == false ? (readOnly = true) : (readOnly = false)"
+          inputValue="readOnly"
+          label="Readonly"
+          class="gap-2"
+        ></y-checkbox>
+
+        <y-checkbox
+          @change="
+            placeholder == true ? (placeholder = false) : (placeholder = true)
+          "
+          inputValue="placeholder"
+          label="Placeholder"
+          class="gap-2"
+        ></y-checkbox>
+
+        <y-checkbox
+          @change="helper == true ? (helper = false) : (helper = true)"
+          inputValue="helper"
+          label="Helper"
+          class="gap-2"
+        ></y-checkbox>
+      </div>
     </template>
   </usage>
   <copy-to-clip-board>
     &lt;y-text-area
-       {{'\n '}}:id="1" 
-       {{'\n '}}v-model="text" 
-       {{'\n '}}title="Text Area"&gt;
-      {{'\n  '}} &lt;template #helper&gt;Write something&lt;/template&gt;
-      {{'\n '}}&lt;/y-text-area&gt;
+    {{ "\n " }}:id="1" {{ "\n " }}v-model="text"
+    {{ placeholder == true ? '\n placeholder="Type here.. " ' : "" }}
+    {{ readOnly == true ? "\n readonly " : "" }}
+    {{ disable == true ? "\n disabled " : "" }}title="Text Area"&gt;
+    {{ "\n  " }} &lt;template #helper&gt;
+    {{ helper == true ? "Write Something" : "" }} &lt;/template&gt;
+    {{ "\n " }}&lt;/y-text-area&gt;
   </copy-to-clip-board>
 
   <div class="flex flex-col mt-7 gap-1">
@@ -112,6 +151,9 @@
 <script setup>
 import { ref } from "vue";
 
-const text=ref("");
-
+const text = ref(""),
+  placeholder = ref(false),
+  disable = ref(false),
+  readOnly = ref(false),
+  helper = ref(false);
 </script>

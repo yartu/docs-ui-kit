@@ -25,8 +25,8 @@
   </usage>
   <copy-to-clip-board>
     &lt;y-switch inputValue="sampleSwitch"{{ "\n " }}label="Sample Switch"{{
-      disabled ? "\n disabled":""
-    }}{{ checked ? "\n checked":""  }}&gt;{{ "\n   " }}&lt;i class="yi
+      disabled ? "\n disabled" : ""
+    }}{{ checked ? "\n checked" : "" }}&gt;{{ "\n   " }}&lt;i class="yi
     yi-check"&gt;&lt;/i&gt;{{ "\n " }}&lt;y-switch&gt;
   </copy-to-clip-board>
   <div class="flex flex-col mt-7 gap-1">
@@ -80,7 +80,6 @@ import { ref } from "vue";
 
 const disabled = ref(false),
   checked = ref(false);
-
 
 function setDisabled() {
   if (disabled.value == false) disabled.value = true;
