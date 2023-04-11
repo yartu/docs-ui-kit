@@ -11,7 +11,7 @@
         v-model="selectedNodeId"
       >
         <template #prefix>
-          <span>📁</span>
+          <y-icon name="yi yi-folder"></y-icon>
         </template>
       </y-tree>
     </template>

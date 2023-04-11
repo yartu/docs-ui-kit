@@ -7,6 +7,7 @@ module.exports = {
     "./node_modules/yartu-ui-kit/components/**/*.{vue,js}",
   ],
   darkMode: "media", // or 'media' or 'class'
+  purge: ["./src/**/*.vue", "./src/**/*.md"],
   theme: {
     extend: {
       keyframes: {

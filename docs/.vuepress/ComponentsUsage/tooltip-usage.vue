@@ -9,7 +9,7 @@
         :bottom="vertical == 'bottom' ? true : false"
         :center="horizontal == 'center' ? true : false"
       >
-        <y-button primary>Open Tooltip</y-button>
+        <YartuButton primary>Open Tooltip</YartuButton>
         <template #tooltip>Hello from Tooltip!</template>
       </y-tooltip>
     </template>
@@ -19,7 +19,7 @@
         <div class="flex flex-col gap-1">
           <y-radio
             class="gap-2 text-sm"
-            checked
+            :checked="true"
             v-model="horizontal"
             inputValue="right"
             label="Right "
@@ -39,6 +39,7 @@
 
           <p class="font-semibold">Vertical</p>
           <y-radio
+            :checked="true"
             class="gap-2 text-sm"
             v-model="vertical"
             inputValue="bottom"
@@ -128,15 +129,15 @@
 
 <script setup>
 import { ref } from "vue";
-
+import YartuButton from "../ComponentsUsage/YartuButton.vue";
 const center = ref(false),
   bottom = ref(false),
   top = ref(false),
   left = ref(false),
   right = ref(false);
 
-const vertical = ref("");
-const horizontal = ref("");
+const vertical = ref("bottom");
+const horizontal = ref("right");
 
 function setprop(prop) {
   if (prop.value == false) prop.value = true;

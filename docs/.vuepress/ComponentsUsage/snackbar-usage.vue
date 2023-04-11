@@ -2,13 +2,15 @@
   <usage>
     <template #title>Snackbar</template>
     <template #component>
-      <y-button secondary @click="openSnackbar">Open Snackbar</y-button>
+      <YartuButton primary @click="openSnackbar">Open Snackbar</YartuButton>
       <y-snackbar
         v-if="isSnackbarOpen"
         :bottom="bottom"
         :left="left"
         :right="right"
         :center="center"
+        :closable="true"
+        @close="closeSnackbar"
       >
         Hello from Snackbar!
       </y-snackbar>
@@ -51,16 +53,6 @@
     }}{{ right ? "\n right" : "" }}{{ center ? "\n center" : "" }}&gt;{{
       "\n  "
     }}Hello from Snackbar!{{ "\n " }}&lt;/y-snackbar&gt;
-
-    <y-snackbar
-      v-if="isSnackbarOpen"
-      :bottom="bottom"
-      :left="left"
-      :right="right"
-      :center="center"
-    >
-      Hello from Snackbar!
-    </y-snackbar>
   </copy-to-clip-board>
   <div class="flex flex-col mt-7 gap-1">
     <p class="font-semibold text-xl">Component Props</p>
@@ -100,6 +92,7 @@
 
 <script setup>
 import { ref } from "vue";
+import YartuButton from "./YartuButton.vue";
 
 const isSnackbarOpen = ref(false),
   bottom = ref(true),
@@ -110,6 +103,9 @@ const isSnackbarOpen = ref(false),
 function openSnackbar() {
   if (isSnackbarOpen.value == false) isSnackbarOpen.value = true;
   else isSnackbarOpen.value = false;
+}
+function closeSnackbar() {
+  this.snackbar.show = false;
 }
 
 function setBottom() {

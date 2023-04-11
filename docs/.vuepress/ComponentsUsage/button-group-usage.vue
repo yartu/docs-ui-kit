@@ -31,6 +31,40 @@
     }}&lt;/span&gt;{{ "\n  " }} &lt;/template&gt;{{ "\n" }}
     &lt;/y-button-group&gt;
   </copy-to-clip-board>
+  <div class="flex flex-col mt-7 gap-1">
+    <p class="font-semibold text-xl">Component Props</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Prop Name</th>
+          <th>Type</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>modelValue</td>
+          <td>model</td>
+          <td>requierd!</td>
+        </tr>
+        <tr>
+          <td>optionLabel</td>
+          <td>options[label:]</td>
+          <td>required!</td>
+        </tr>
+        <tr>
+          <td>options</td>
+          <td>Object</td>
+          <td>requred!</td>
+        </tr>
+        <tr>
+          <td>datakey</td>
+          <td>options[key:]</td>
+          <td>required!</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </template>
 
 <script setup>

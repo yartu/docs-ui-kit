@@ -34,7 +34,7 @@
     </template>
   </usage>
   <copy-to-clip-board>
-    &lt;y-data-table {{ search ? "search " : "" }}{{ "\n " }} :item="items"
+    &lt;y-data-table {{ search ? "dataSearch " : "" }}{{ "\n " }} :item="items"
     :headers="headers" {{ selectable ? "selectable" : "" }} &gt;{{ "\n" }}
 
     &lt;/y-data-table&gt;

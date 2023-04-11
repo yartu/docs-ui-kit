@@ -1,5 +1,8 @@
 @import url('tailwind.css');
 @import url('input.css');
+@import "../../node_modules/tailwindcss/base.css";
+@import "../../node_modules/tailwindcss/components.css";
+@import "../../node_modules/tailwindcss/utilities.css";
 :root {
   // brand colors
   --c-brand: #3663f2;

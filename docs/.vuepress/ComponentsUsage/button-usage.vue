@@ -247,6 +247,21 @@
           <td>false</td>
         </tr>
         <tr>
+          <td>loading</td>
+          <td>Boolean</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>text</td>
+          <td>Boolean</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>succes</td>
+          <td>Boolean</td>
+          <td>false</td>
+        </tr>
+        <tr>
           <td>tertiary</td>
           <td>Boolean</td>
           <td>false</td>

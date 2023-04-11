@@ -9,6 +9,7 @@ module.exports = {
   description: "Powered by Tailwind & Vue 3",
   base: "docs-ui-kit",
   head: [
+    ["link", { rel: "stylesheet", href: "/styles/index.css" }],
     [
       "link",
       {
@@ -253,6 +254,10 @@ module.exports = {
               link: "../components/simple-table.md",
             },
             {
+              text: "Skeleton",
+              link: "../components/skeleton.md",
+            },
+            {
               text: "Small Card",
               link: "../components/small-card.md",
             },
@@ -320,6 +325,22 @@ module.exports = {
     },
   }),
   plugins: [
+    [
+      "vuepress-plugin-tailwind",
+      {
+        purge: {
+          enabled: true,
+          content: [
+            "./src/**/*.md",
+            "./src/**/*.vue",
+            "./src/**/*.js",
+            "./src/**/*.jsx",
+          ],
+        },
+        theme: {},
+        variants: {},
+      },
+    ],
     registerComponentsPlugin({
       componentsDir: path.resolve(__dirname, "./ComponentsUsage/"),
       componentsPatterns: "**/*",
