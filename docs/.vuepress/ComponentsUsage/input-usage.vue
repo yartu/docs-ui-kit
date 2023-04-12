@@ -30,7 +30,6 @@
           <p class="pr-1"><y-icon class="pl-1" name="yi yi-search"></y-icon></p>
         </template>
       </y-input>
-      
     </template>
 
     <template #rightProps>
@@ -171,9 +170,24 @@
       </thead>
       <tbody>
         <tr>
+          <td>modelValue</td>
+          <td>String, Number, Object</td>
+          <td></td>
+        </tr>
+        <tr>
           <td>id</td>
           <td>String</td>
           <td>''</td>
+        </tr>
+        <tr>
+          <td>dense</td>
+          <td>Boolean</td>
+          <td>'false'</td>
+        </tr>
+        <tr>
+          <td>dropdownModel</td>
+          <td>Boolean</td>
+          <td>'false'</td>
         </tr>
         <tr>
           <td>label</td>
@@ -216,12 +230,22 @@
           <td>false</td>
         </tr>
         <tr>
+          <td>disabledText</td>
+          <td>String</td>
+          <td>''</td>
+        </tr>
+        <tr>
           <td>iconRight</td>
           <td>Boolean</td>
           <td>false</td>
         </tr>
         <tr>
           <td>action</td>
+          <td>Boolean</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>rounded</td>
           <td>Boolean</td>
           <td>false</td>
         </tr>
@@ -244,6 +268,21 @@
           <td>helper</td>
           <td>Boolean</td>
           <td>false</td>
+        </tr>
+        <tr>
+          <td>suffix</td>
+          <td>Boolean</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>prefix</td>
+          <td>Boolean</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>inputClasses</td>
+          <td>String</td>
+          <td>''</td>
         </tr>
       </tbody>
     </table>

@@ -144,11 +144,11 @@
         <tr>
           <td>id</td>
           <td>String</td>
-          <td>''</td>
+          <td>null</td>
         </tr>
         <tr>
           <td>size</td>
-          <td>string</td>
+          <td>String</td>
           <td>md</td>
         </tr>
         <tr>
@@ -159,7 +159,7 @@
         <tr>
           <td>inputValue</td>
           <td>String</td>
-          <td>This prop is required !</td>
+          <td>required !</td>
         </tr>
         <tr>
           <td>disabled</td>
@@ -172,12 +172,22 @@
           <td>""</td>
         </tr>
         <tr>
+          <td>error</td>
+          <td>Boolean</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>primary</td>
+          <td>Boolean</td>
+          <td>false</td>
+        </tr>
+        <tr>
           <td>indeterminate</td>
           <td>Boolean</td>
           <td>false</td>
         </tr>
         <tr>
-          <td>Color</td>
+          <td>color</td>
           <td>string</td>
           <td>""</td>
         </tr>

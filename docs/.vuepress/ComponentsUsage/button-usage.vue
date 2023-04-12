@@ -309,7 +309,7 @@
         <tr>
           <td>iconColor</td>
           <td>String</td>
-          <td>''</td>
+          <td>'none'</td>
         </tr>
       </tbody>
     </table>

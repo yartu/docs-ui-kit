@@ -101,6 +101,11 @@
           <td>Boolean</td>
           <td>false</td>
         </tr>
+        <tr>
+          <td>showAction</td>
+          <td>Boolean</td>
+          <td>false</td>
+        </tr>
       </tbody>
     </table>
   </div>

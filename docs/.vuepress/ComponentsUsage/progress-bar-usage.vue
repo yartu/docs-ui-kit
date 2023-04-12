@@ -152,6 +152,11 @@
           <td>4</td>
         </tr>
         <tr>
+          <td>split</td>
+          <td>Boolean</td>
+          <td>false</td>
+        </tr>
+        <tr>
           <td>default</td>
           <td>Boolean</td>
           <td>false</td>
@@ -170,6 +175,16 @@
           <td>cancel</td>
           <td>Boolean</td>
           <td>false</td>
+        </tr>
+        <tr>
+          <td>transparent</td>
+          <td>Boolean</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>color</td>
+          <td>String</td>
+          <td>''</td>
         </tr>
       </tbody>
     </table>

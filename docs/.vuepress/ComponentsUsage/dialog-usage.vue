@@ -108,7 +108,7 @@
         </tr>
         <tr>
           <td>icon</td>
-          <td>string</td>
+          <td>String</td>
           <td>''</td>
         </tr>
         <tr>
@@ -128,27 +128,27 @@
         </tr>
         <tr>
           <td>type</td>
-          <td>string</td>
+          <td>String</td>
           <td>''</td>
         </tr>
         <tr>
           <td>color</td>
-          <td>string</td>
+          <td>String</td>
           <td>''</td>
         </tr>
         <tr>
           <td>actionButtons</td>
-          <td>array</td>
+          <td>Array</td>
           <td>"() => []"</td>
         </tr>
         <tr>
           <td>showCancelButton</td>
-          <td>boolean</td>
+          <td>Boolean</td>
           <td>true</td>
         </tr>
         <tr>
           <td>autoClose</td>
-          <td>boolean</td>
+          <td>Boolean</td>
           <td>false</td>
         </tr>
       </tbody>

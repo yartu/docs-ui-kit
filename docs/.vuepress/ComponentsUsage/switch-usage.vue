@@ -41,9 +41,19 @@
       </thead>
       <tbody>
         <tr>
+          <td>id</td>
+          <td>String</td>
+          <td></td>
+        </tr>
+        <tr>
           <td>color</td>
           <td>String</td>
           <td>'#ffffff'</td>
+        </tr>
+        <tr>
+          <td>label</td>
+          <td>String</td>
+          <td>''</td>
         </tr>
         <tr>
           <td>bgColor</td>
@@ -66,7 +76,7 @@
           <td>false</td>
         </tr>
         <tr>
-          <td>inputValue</td>
+          <td>modelValue</td>
           <td>String</td>
           <td>This prop is required!</td>
         </tr>

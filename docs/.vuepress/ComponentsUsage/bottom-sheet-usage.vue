@@ -70,7 +70,7 @@
         <tr>
           <td>ignoreClickOutside</td>
           <td>Boolean</td>
-          <td></td>
+          <td>false</td>
         </tr>
         <tr>
           <td>classes</td>

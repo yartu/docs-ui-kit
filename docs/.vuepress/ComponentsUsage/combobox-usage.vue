@@ -96,6 +96,11 @@
       </thead>
       <tbody>
         <tr>
+          <td>modelValue</td>
+          <td>Array, Object, String, Number</td>
+          <td>''</td>
+        </tr>
+        <tr>
           <td>itemKey</td>
           <td>String</td>
           <td>''</td>
@@ -112,57 +117,52 @@
         </tr>
         <tr>
           <td>returnObject</td>
-          <td>boolean</td>
+          <td>Boolean</td>
           <td>false</td>
         </tr>
         <tr>
           <td>top</td>
-          <td>boolean</td>
+          <td>Boolean</td>
           <td>false</td>
         </tr>
         <tr>
           <td>left</td>
-          <td>boolean</td>
+          <td>Boolean</td>
           <td>false</td>
         </tr>
         <tr>
           <td>multiple</td>
-          <td>boolean</td>
+          <td>Boolean</td>
           <td>false</td>
         </tr>
         <tr>
-          <td>id</td>
-          <td>String</td>
-          <td>''</td>
-        </tr>
-        <tr>
           <td>disabled</td>
-          <td>boolean</td>
+          <td>Boolean</td>
           <td>false</td>
         </tr>
         <tr>
           <td>dense</td>
-          <td>boolean</td>
+          <td>Boolean</td>
           <td>false</td>
         </tr>
         <tr>
           <td>chip</td>
-          <td>boolean</td>
+          <td>Boolean</td>
           <td>false</td>
         </tr>
         <tr>
           <td>closeableChip</td>
-          <td>boolean</td>
+          <td>Boolean</td>
           <td>false</td>
         </tr>
         <tr>
           <td>clearAfterSelect</td>
-          <td>boolean</td>
+          <td>Boolean</td>
           <td>false</td>
         </tr>
         <tr>
-          <td>CloseAfterSelect</td>
-          <td>boolean</td>
+          <td>closeAfterSelect</td>
+          <td>Boolean</td>
           <td>false</td>
         </tr>
         <tr>
@@ -192,22 +192,18 @@
         </tr>
         <tr>
           <td>suggest</td>
-          <td>boolean</td>
+          <td>Boolean</td>
           <td>false</td>
         </tr>
-        <tr>
-          <td>hint</td>
-          <td>String</td>
-          <td>''</td>
-        </tr>
+
         <tr>
           <td>clearİnvalidSuggest</td>
-          <td>boolean</td>
+          <td>Boolean</td>
           <td>false</td>
         </tr>
         <tr>
           <td>clearCache</td>
-          <td>boolean</td>
+          <td>Boolean</td>
           <td>false</td>
         </tr>
         <tr>

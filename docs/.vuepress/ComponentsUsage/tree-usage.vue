@@ -47,7 +47,10 @@
     v-model="selectedNodeId"&gt;{{ "\n  " }} &lt;template #prefix&gt;{{
       "\n   "
     }}
-    &lt;span &gt;📁&lt;/span&gt;{{ "\n  " }} &lt;/template&gt;{{ "\n" }}
+    &lt;span &gt; &lt;y-icon name="yi yi-folder"/&gt; &lt;/span&gt;{{
+      "\n  "
+    }}
+    &lt;/template&gt;{{ "\n" }}
     &lt;/y-tree&gt;
   </copy-to-clip-board>
   <div class="flex flex-col mt-7 gap-1">

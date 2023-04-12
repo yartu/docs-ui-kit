@@ -106,6 +106,11 @@
           <td>string</td>
           <td>null</td>
         </tr>
+        <tr>
+          <td>modelValue</td>
+          <td>model</td>
+          <td>null</td>
+        </tr>
       </tbody>
     </table>
     <p>

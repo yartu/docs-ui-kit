@@ -75,7 +75,7 @@
         <tr>
           <td>size</td>
           <td>String</td>
-          <td>fasle</td>
+          <td>'md'</td>
         </tr>
       </tbody>
     </table>

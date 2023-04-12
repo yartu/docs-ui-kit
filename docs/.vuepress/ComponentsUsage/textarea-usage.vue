@@ -119,6 +119,11 @@
           <td>false</td>
         </tr>
         <tr>
+          <td>showLenght</td>
+          <td>Boolean</td>
+          <td>false</td>
+        </tr>
+        <tr>
           <td>disabled</td>
           <td>Boolean</td>
           <td>false</td>
@@ -142,6 +147,11 @@
           <td>helperMessage</td>
           <td>String</td>
           <td>false</td>
+        </tr>
+        <tr>
+          <td>resize</td>
+          <td>String</td>
+          <td>'both'</td>
         </tr>
       </tbody>
     </table>

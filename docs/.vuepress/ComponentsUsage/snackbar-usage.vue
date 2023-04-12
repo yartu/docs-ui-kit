@@ -5,11 +5,12 @@
       <YartuButton primary @click="openSnackbar">Open Snackbar</YartuButton>
       <y-snackbar
         v-if="isSnackbarOpen"
+        type="success"
+        :closable="true"
         :bottom="bottom"
         :left="left"
         :right="right"
         :center="center"
-        :closable="true"
         @close="closeSnackbar"
       >
         Hello from Snackbar!
@@ -85,6 +86,36 @@
           <td>Boolean</td>
           <td>false</td>
         </tr>
+        <tr>
+          <td>type</td>
+          <td>String</td>
+          <td>''</td>
+        </tr>
+        <tr>
+          <td>closable</td>
+          <td>Boolean</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>duration</td>
+          <td>Number</td>
+          <td>4000</td>
+        </tr>
+        <tr>
+          <td>iconColor</td>
+          <td>String</td>
+          <td>'#FFF'</td>
+        </tr>
+        <tr>
+          <td>finish</td>
+          <td>Function</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>action</td>
+          <td>Object</td>
+          <td></td>
+        </tr>
       </tbody>
     </table>
   </div>
@@ -105,7 +136,8 @@ function openSnackbar() {
   else isSnackbarOpen.value = false;
 }
 function closeSnackbar() {
-  this.snackbar.show = false;
+  if (isSnackbarOpen.value == true) isSnackbarOpen.value = false;
+  else isSnackbarOpen.value = true;
 }
 
 function setBottom() {
