@@ -253,10 +253,10 @@ module.exports = {
               text: "Simple Table",
               link: "../components/simple-table.md",
             },
-            {
-              text: "Skeleton",
-              link: "../components/skeleton.md",
-            },
+            // {
+            //   text: "Skeleton",
+            //   link: "../components/skeleton.md",
+            // },
             {
               text: "Small Card",
               link: "../components/small-card.md",

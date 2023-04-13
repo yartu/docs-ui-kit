@@ -13,7 +13,6 @@
             : 'xs'
         "
         :max="4"
-        :color="color"
       >
         <y-avatar size="md" image="/docs-ui-kit/images/avatar.jpeg"></y-avatar>
         <y-avatar size="md" image="/docs-ui-kit/images/john.jpeg"></y-avatar>
@@ -43,7 +42,7 @@
           </div>
         </div>
       </div>
-      <div class="flex w-1/3 flex-col gap-3">
+      <!-- <div class="flex w-1/3 flex-col gap-3">
         <p class="font-semibold">Color</p>
         <div class="flex gap-4">
           <y-radio
@@ -66,7 +65,7 @@
             label="Green"
           ></y-radio>
         </div>
-      </div>
+      </div> -->
     </template>
     <template #bottomProps> </template>
   </usage>
